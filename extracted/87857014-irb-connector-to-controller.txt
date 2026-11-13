@@ -1,0 +1,16 @@
+--- slide1.xml
+
+--- slide2.xml
+
+--- slide3.xml
+
+--- slide4.xml
+
+--- slide5.xml
+
+--- slide6.xml
+
+--- slide7.xml
+Applying the glue
+--- slide8.xml
+Hardening the glue with ultraviolet light

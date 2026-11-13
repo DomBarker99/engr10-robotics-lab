@@ -1,0 +1,32 @@
+Robot Project
+Grading Rubric
+
+Total points = 80
+
+1 – Task 1 (25 points) - Full credit, 25 points, for locating the red beacon and stopping the robot successfully and 15 points for failing. 
+
+2 – Task 2 (20 points) – Full credit, 20 points, for successfully turning off the red beacon, this includes a successful arm design. Full credit for turning it off and 15 points for the arm operating but failing to turn off the beacon. Only 10 points if the arm fails to operate at all.
+
+3 – Task 3 (10 points) – Full credit, 10 points, for locating the green beacon; this requires changing frequency in the program.
+
+4 – Task 4 (10 points) – Full credit, 10 points, for carrying or pushing the green beacon out of the arena which includes using bumper and limit switches, or ultrasonic sensor. Zero points for failing to get out of the arena.
+
+5 – Robot weight (10 points) – with battery included
+
+	 Weight		points
+	  2.5 <		10
+	2.5 – 2.75	  8
+	2.75 – 3.0	  5
+
+6 – (5 points) How creative is the main robot body and the arm design?
+
+
+
+5 bonus points for finishing all tasks the fastest
+
+5 bonus points for the lightest robot.
+
+
+Each team can have three runs, the fastest will be counted
+
+

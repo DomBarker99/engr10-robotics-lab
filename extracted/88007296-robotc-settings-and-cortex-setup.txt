@@ -1,0 +1,32 @@
+--- slide1.xml
+Double click to open the ROBOTC 4.0 – select New File or Open File
+Changing the default settings for ROBOTC
+--- slide2.xml
+Changing the default settings
+Select Robot from the top menu and change communication mode to USB only
+--- slide3.xml
+Changing the default settings
+Change platform type: Select Robot → Platform Type → VEX Robotics → VEX 2.0 Cortex
+--- slide4.xml
+Select Robot → Platform Type → select Natural Language PLTW
+--- slide5.xml
+Connect a 7.2V Robot battery to the Cortex and move the POWER switch to the ON position
+Configuring the VEX Cortex Controller – wired (USB A-to-A)
+--- slide6.xml
+Select Automatic Selection
+--- slide7.xml
+
+--- slide8.xml
+
+--- slide9.xml
+
+--- slide10.xml
+
+--- slide11.xml
+https://www.robotc.net/files/pdf/vex-natural-language/NL_Cortex_Quick.pdf
+https://www.robotc.net/WebHelpVEX/index.htm
+ROBOTC for VEX Robotics 4.X - Users Manual
+http://robotc.net/
+Last Updated: 1/27/2016
+© Robomatter Inc. 2016
+Useful links

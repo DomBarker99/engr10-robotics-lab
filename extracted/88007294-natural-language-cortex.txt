@@ -1,0 +1,1070 @@
+ROBOTC Natural Language - VEX Cortex Reference:
+ Setup Functions:
+ Robot Type
+ Choose which robot you want to write a program for. Note that not including this command defaults to
+ "robotType(none);" Also please note that this command should be the first thing in your "task main()".
+
+
+                         Command:
+
+                         robotType(type);
+
+
+ Parameters: type
+ Valid Robot Types for type:
+ none - this will not set up any motors and sensors for you (this is the default.)
+ recbot - sets the motors and sensors to match a default Recbot.
+ swervebot - sets the motors and sensors to match a default Swervebot.
+
+ Usage without Parameters:
+                                                                               This snippet of code will set the robot type to none by
+ robotType();
+                                                                               default, skipping the setup process. You must manually set
+                                                                               the motors and sensors in the 'Motors and Sensors Setup'
+ Usage with Parameters:                                                        menu.
+                                                                               This snippet of code will set the robot type to recbot. This
+ robotType(recbot);
+                                                                               will automatically set up the motor and sensor ports to
+                                                                               match those of a default Recbot.
+
+
+
+ Movement Functions:
+ Set Servo
+ Set a servo to a desired position.
+
+                         Command:
+
+                         setServo(servo, position);
+
+
+ Parameters: servo, position
+ Acceptable Motors for servo:
+ MOTOR ports 2 through 9 (and your names for them given in Motors and Sensors Setup.)
+ Valid Range Values for position:
+ -127 to 127.
+
+ Usage without Parameters:
+                                                                               This snippet of code will set the servo on motor-port 6 to
+ setServo();
+                                                                               position 0 (center). The default motor-port is port6 and
+                                                                               the default position is 0 for setServo().
+
+
+ Usage with Parameters:
+                                                                               This snippet of code will set the servo on motor-port 8 to
+ setServo(port8, 37);
+                                                                               position 37.
+
+
+
+ © 2011 Carnegie Mellon Robotics Academy / For use with VEX Robotics Systems                     ROBOTC Natural Language - VEX Cortex Reference • 1
+ROBOTC Natural Language - VEX Cortex Reference:
+ Start Motor
+ Set a motor to a speed.
+
+                         Command:
+
+                         startMotor(motor, speed);
+
+
+ Parameters: motor, speed
+ Acceptable Motors for motor:
+ MOTOR ports 1 through 10 (and your names for them given in Motors and Sensors Setup.)
+ Valid Range Values for speed:
+ -127 (reverse) to 127 (forward) where 0 is stop.
+
+ Usage without Parameters:
+                                                                               This snippet of code will run the motor in motor-port 6 at
+ startMotor();
+                                                                               speed 95 for 1.0 seconds and then stop it. The default
+ wait();
+                                                                               motor-port is port6 and the default speed is 95 for
+ stopMotor();
+                                                                               startMotor().
+
+ Usage with Parameters:
+                                                                               This snippet of code will run the motor in motor-port 8 at
+ startMotor(port8, -32);
+                                                                               speed -32 for 0.5 seconds and then stop it.
+ wait(0.5);
+ stopMotor(port8);
+
+
+
+
+ Stop Motor
+ Stops a motor.
+
+                         Command:
+
+                         stopMotor(motor);
+
+
+ Parameters: motor
+ Acceptable Motors for motor:
+ MOTOR ports 1 through 10 (and your names for them given in Motors and Sensors Setup.)
+
+ Usage without Parameters:
+                                                                               This snippet of code will run the motor in motor-port 6 at
+ startMotor();
+                                                                               speed 95 for 1.0 seconds and then stop it. The default
+ wait();
+                                                                               motor-port is port6 for stopMotor().
+ stopMotor();
+
+
+ Usage with Parameters:
+                                                                               This snippet of code will run the motor in motor-port 8 at
+ startMotor(port8, -32);
+                                                                               speed -32 for 0.5 seconds and then stop it.
+ wait(0.5);
+ stopMotor(port8);
+
+
+
+
+ © 2011 Carnegie Mellon Robotics Academy / For use with VEX Robotics Systems                    ROBOTC Natural Language - VEX Cortex Reference • 2
+ROBOTC Natural Language - VEX Cortex Reference:
+ Wait Functions:
+ Wait
+ Wait an amount of time measured in seconds. The robot continues to do what it was doing during this time.
+
+                         Command:
+
+                         wait(time);
+
+
+ Parameters: time
+ Valid Range Values for time:
+ 0.0 to 3600.0 and up.
+
+ Usage without Parameters:
+                                                                               This snippet of code will run the robot forward for 1.0
+ forward();
+                                                                               seconds and then stop. The default time is 1.0 (seconds)
+ wait();
+                                                                               for wait().
+ stop();
+
+
+ Usage with Parameters:
+                                                                               This snippet of code will run the robot forward at half
+ forward(63);
+                                                                               speed for 2.73 seconds and then stop.
+ wait(2.73);
+ stop();
+
+
+
+
+ Wait in Milliseconds
+ Wait an amount of time in milliseconds. The robot continues to do what it was doing during this time.
+
+                         Command:
+
+                         waitInMilliseconds(time);
+
+
+ Parameters: time
+ Valid Range Values for time:
+ 0 to 3600000 and up.
+
+ Usage without Parameters:
+                                                                               This snippet of code will run the robot forward for 1000
+ forward();
+                                                                               milliseconds (1.0 seconds) and then stop. The default time
+ waitInMilliseconds();
+                                                                               is 1000 (milliseconds) for waitInMilliseconds().
+ stop();
+
+
+ Usage with Parameters:
+                                                                               This snippet of code will run the robot forward at half
+ forward(63);
+                                                                               speed for 2730 milliseconds (2.73 seconds) and then stop.
+ waitInMilliseconds(2730);
+ stop();
+
+
+
+
+ © 2011 Carnegie Mellon Robotics Academy / For use with VEX Robotics Systems                     ROBOTC Natural Language - VEX Cortex Reference • 3
+ROBOTC Natural Language - VEX Cortex Reference:
+ Robot Movement Functions:
+ Note that for desirable results with the following set of functions, you must use the "robotType();" Setup Function with either recbot or
+ swervebot in the beginning of your "task main()".
+ Forward
+ Both wheels rotate forward at the same speed, causing the robot to move forward.
+
+                         Command:
+
+                         forward(speed);
+
+
+ Parameters: speed
+ Valid Range Values for speed:
+ 0 to 127 (however forward() will always move your robot forward.)
+
+ Usage without Parameters:
+                                                                               This snippet of code will run the robot forward for 1.0
+ forward();
+                                                                               seconds and then stop. The default speed is 95 for
+ wait();
+                                                                               forward().
+ stop();
+
+
+ Usage with Parameters:
+                                                                               This snippet of code will run the robot forward at half
+ forward(63);
+                                                                               speed for 2.0 seconds and then stop.
+ wait(2.0);
+ stop();
+
+
+
+
+ Backward
+ Both wheels rotate backward at the same speed, causing the robot to move backward.
+
+                         Command:
+
+                         backward(speed);
+
+
+ Parameters: speed
+ Valid Range Values for speed:
+ -127 to 0 (however backward() will always move your robot backward.)
+
+ Usage without Parameters:
+                                                                               This snippet of code will run the robot backward for 1.0
+ backward();
+                                                                               seconds and then stop. The default speed is -95 for
+ wait();
+                                                                               backward().
+ stop();
+
+
+ Usage with Parameters:
+                                                                               This snippet of code will run the robot backward at half
+ backward(-63);
+                                                                               speed for 2.0 seconds and then stop.
+ wait(2.0);
+ stop();
+
+
+
+ © 2011 Carnegie Mellon Robotics Academy / For use with VEX Robotics Systems                     ROBOTC Natural Language - VEX Cortex Reference • 4
+ROBOTC Natural Language - VEX Cortex Reference:
+ Point Turn
+ Both wheels rotate at the same speed but in opposite directions, causing the robot to turn in place.
+
+                         Command:
+
+                         pointTurn(direction, speed);
+
+
+ Parameters: direction, speed
+ Valid Directions for direction:
+ left and right.
+ Valid Range Values for speed:
+ -127 to 127.
+
+ Usage without Parameters:
+                                                                               This snippet of code will make the robot turn right in place
+ pointTurn();
+                                                                               at speed 95 for 1.0 seconds and then stop. The default
+ wait();
+                                                                               direction and speed are right and 95 for pointTurn().
+ stop();
+
+
+ Usage with Parameters:
+                                                                               This snippet of code will make the robot turn left in place
+ pointTurn(left, 63);
+                                                                               at half speed for 0.4 seconds.
+ wait(0.4);
+ stop();
+
+
+
+
+ Swing Turn
+ One wheel rotates while the other does not move, causing the robot to make a wide turn around the stopped wheel.
+
+                         Command:
+
+                         swingTurn(direction, speed);
+
+
+ Parameters: direction, speed
+ Valid Directions for direction:
+ left and right.
+ Valid Range Values for speed:
+ -127 to 127.
+
+ Usage without Parameters:
+                                                                               This snippet of code will make the robot make a wide
+ swingTurn();
+                                                                               right turn at speed 95 for 1.0 seconds and then stop.
+ wait();
+                                                                               The default direction and speed are right and 95 for
+ stop();
+                                                                               swingTurn().
+
+ Usage with Parameters:
+                                                                               This snippet of code will make the robot make a wide left
+ swingTurn(left, 63);
+                                                                               turn at half speed for 0.75 seconds.
+ wait(0.75);
+ stop();
+
+ © 2011 Carnegie Mellon Robotics Academy / For use with VEX Robotics Systems                     ROBOTC Natural Language - VEX Cortex Reference • 5
+ROBOTC Natural Language - VEX Cortex Reference:
+ Stop
+ Both wheels do not move, causing the robot to stop.
+
+                         Command:
+
+                         stop();
+
+
+ Parameters: N/A
+
+ Usage without Parameters:
+                                                                               This snippet of code will run the robot forward for
+ forward();
+                                                                               1.0 seconds and then stop. (Note that there are no
+ wait();
+                                                                               parameters for stop().
+ stop();
+
+
+ Usage with Parameters:
+                                                                               This snippet of code will run the robot forward at half
+ forward(63);
+                                                                               speed for 2.0 seconds and then stop.
+ wait(2.0);
+ stop();
+
+
+
+
+ Line Track for Time
+ The robot will track a dark line on a light surface for a specified time in seconds.
+
+                         Command:
+
+                         lineTrackForTime(time, threshold, sensorLeft, sensorCenter, sensorRight);
+
+
+
+ Parameters: time, threshold, sensorLeft, sensorCenter, sensorRight
+ Valid Range Values for time:
+ 0 to 3600.0 and up.
+ Valid Range Values for threshold:
+ (light) 0 to 4095 (dark).
+ Acceptable Sensors for sensorLeft, sensorCenter, sensorRight:
+ ANALOG ports 1 through 8 (and your names for them given in Motors and Sensors Setup.)
+
+ Usage without Parameters:
+                                                                               This snippet of code will make the robot follow a dark line
+ lineTrackForTime();
+                                                                               on a light surface for 5.0 seconds using a threshold of
+ stop();
+                                                                               505 and line tracking sensors in analog-ports in1, in2,
+                                                                               and in3 (L, C, R) and then stop. These values and sensors
+                                                                               are the defaults for lineTrackForTime().
+ Usage with Parameters:
+                                                                               This snippet of code will make the robot follow a dark line
+ lineTrackForTime(7.5, 99, in6, in7, in8);
+                                                                               on a light surface for 7.5 seconds, using a threshold of 99
+ stop();
+                                                                               and line tracking sensors in analog-ports 6, 7, and 8 (L, C,
+                                                                               R) and then stop.
+
+
+
+ © 2011 Carnegie Mellon Robotics Academy / For use with VEX Robotics Systems                     ROBOTC Natural Language - VEX Cortex Reference • 6
+ROBOTC Natural Language - VEX Cortex Reference:
+ Line Track for Rotations
+ The robot will track a dark line on a light surface for a specified distance in encoder rotations.
+
+                         Command:
+                         lineTrackForRotations(rotations, threshold, sensorLeft, sensorCenter, sensorRight);
+
+
+
+
+ Parameters: rotations, threshold, sensorLeft, sensorCenter, sensorRight
+ Valid Range Values for rotations:
+ 0 to 65000.0 and up.
+ Valid Range Values for threshold:
+ (light) 0 to 4095 (dark).
+ Acceptable Sensors for sensorLeft, sensorCenter, sensorRight:
+ ANALOG ports 1 through 8 (and your names for them given in Motors and Sensors Setup.)
+
+ Usage without Parameters:
+                                                                               This snippet of code will make the robot follow a dark line
+ lineTrackForRotations();
+                                                                               on a white surface for 3.0 rotations using a threshold of
+ stop();
+                                                                               505 and line tracking sensors in analog-ports in1, in2,
+                                                                               and in3 (L, C, R) and then stop. These values and sensors
+                                                                               are the defaults for lineTrackForRotations().
+ Usage with Parameters:
+                                                                               This snippet of code will make the robot follow a dark line
+ lineTrackForRotations(4.75, 99, in6, in7, in8);
+                                                                               on a white surface for 4.75 rotations, using a threshold of
+ stop();
+                                                                               99 and line tracking sensors in analog-ports 6, 7, and 8
+                                                                               (L, C, R) and then stop.
+
+
+
+
+ © 2011 Carnegie Mellon Robotics Academy / For use with VEX Robotics Systems                    ROBOTC Natural Language - VEX Cortex Reference • 7
+ROBOTC Natural Language - VEX Cortex Reference:
+ Move Straight for Time
+ The robot will use encoders to maintain a straight course for a specified length of time in seconds.
+
+                         Command:
+
+                         moveStraightForTime(time, rightEncoder, leftEncoder);
+
+
+ Parameters: time, rightEncoder, leftEncoder
+ Valid Range Values for time:
+ 0 to 3600.0 and up.
+ Acceptable Sensors for rightEncoder, leftEncoder:
+ DIGITAL ports 1 through 11 (and your names for them given in Motors and Sensors Setup.)
+
+ Usage without Parameters:
+                                                                               This snippet of code will make the robot move forward,
+ moveStraightForTime();
+                                                                               maintaining a straight heading for 5.0 seconds using
+ stop();
+                                                                               quadrature encoders in digital-ports dgtl1(+dgtl2)
+                                                                               and digtl3(+dgtl4), and then stop. These values and
+                                                                               sensors are the defaults for moveStraightForTime().
+ Usage with Parameters:
+                                                                               This snippet of code will make the robot move forward,
+ moveStraightForTime(7.5, dgtl5, dgtl3);
+                                                                               maintaining a straight heading for 7.5 seconds using
+ stop();
+                                                                               quadrature encoders in digital-ports 5+6 and 3+4, and
+                                                                               then stop.
+
+
+
+ Move Straight for Rotations
+ The robot will use encoders to maintain a straight course for a specified distance in rotations.
+
+                         Command:
+
+                         moveStraightForRotations(time, rightEncoder, leftEncoder);
+
+
+ Parameters: rotations, rightEncoder, leftEncoder
+ Valid Range Values for rotaions:
+ 0 to 65000.0 and up.
+ Acceptable Sensors for rightEncoder, leftEncoder:
+ DIGITAL ports 1 through 11 (and your names for them given in Motors and Sensors Setup.)
+
+ Usage without Parameters:
+                                                                               This snippet of code will make the robot move
+ moveStraightForRotations();
+                                                                               forward, maintaining a straight heading for 1.0
+ stop();
+                                                                               rotations using quadrature encoders in digital-ports
+                                                                               dgtl1(+dgtl2) and digtl3(+dgtl4), and then
+                                                                               stop. These values and sensors are the defaults for
+ Usage with Parameters:                                                        moveStraightForRotations().
+                                                                               This snippet of code will make the robot move forward,
+ moveStraightForRotations(4.75, dgtl5, dgtl3);
+                                                                               maintaining a straight heading for 4.75 rotations using
+ stop();
+                                                                               quadrature encoders in digital-ports 5+6 and 3+4, and
+                                                                               then stop.
+ © 2011 Carnegie Mellon Robotics Academy / For use with VEX Robotics Systems                    ROBOTC Natural Language - VEX Cortex Reference • 8
+ROBOTC Natural Language - VEX Cortex Reference:
+ Tank Control
+ The robot will be remote controlled in such a way that the right motor is mapped to the right joystick and the left
+ motor is mapped to the left joystick.
+
+                         Command:
+
+                         tankControl(rightJoystick, leftJoystick, threshold);
+
+
+ Parameters: rightJoystick, leftJoystick
+ Valid Channels for rightJoystick, leftJoystick:
+ Any VEXnet Remote Control channel, however Ch2 and Ch3 make the most sense for this application.
+ Usage without Parameters:
+                                                                               This snippet of code will remote control the robot using
+ while(true)
+                                                                               "tank control". The default right and left joysticks are Ch2
+ {
+                                                                               and Ch3, and 10 for tankControl().
+   tankControl();
+ }
+
+ Usage with Parameters:
+                                                                               This snippet of code will remote control the robot using
+ while(true)
+                                                                               "tank control" with channel 1 as the right joystick and
+ {
+                                                                               channel 4 as the left joystick with a threshold of 5.
+   tankControl(Ch1, Ch4, 5);
+ }
+
+
+
+
+ Arcade Control
+ The robot will be remote controlled in such a way that the movement of the robot is mapped to a single joystick,
+ much like a retro arcade game.
+
+                         Command:
+
+                         arcadeControl(verticalJoystick, horizontalJoystick, threshold);
+
+
+ Parameters: verticalJoystick, horizontalJoystick
+ Valid Channels for verticalJoystick, horizontalJoystick:
+ Any VEXnet Remote Control channel, however Ch2+Ch1 or Ch3+Ch4 make the most sense for this application.
+ Usage without Parameters:
+                                                                               This snippet of code will remote control the robot using
+ while(true)
+                                                                               "tank control". The default vertical and horizontal joysticks
+ {
+                                                                               are Ch2 and Ch1, and 10 for arcadeControl().
+   arcadeControl();
+ }
+
+ Usage with Parameters:
+                                                                               This snippet of code will remote control the robot using
+ while(true)
+                                                                               "tank control" with channel 3 as the vertical joystick and
+ {
+                                                                               channel 4 as the horizontal joystick (arcade control with
+   arcadeControl(Ch3, Ch4, 5);
+                                                                               the left-side joystick) with a threshold of 5.
+ }
+
+
+ © 2011 Carnegie Mellon Robotics Academy / For use with VEX Robotics Systems                     ROBOTC Natural Language - VEX Cortex Reference • 9
+ROBOTC Natural Language - VEX Cortex Reference:
+ Until Functions:
+ Until Touch
+ The robot continues what it was doing until the touch sensor is pressed in.
+
+                         Command:
+
+                         untilTouch(sensorPort);
+
+
+ Parameters: sensorPort
+ Acceptable Sensors for sensorPort:
+ DIGITAL ports 1 through 12 (and your names for them given in Motors and Sensors Setup.)
+
+ Usage without Parameters:
+                                                                               This snippet of code will run the robot forward until the
+ forward();
+                                                                               touch sensor in digital-port 6 is pressed, and then stop.
+ untilTouch();
+                                                                               The default sensor port is dgtl6 for untilTouch().
+ stop();
+
+
+ Usage with Parameters:
+                                                                               This snippet of code will run the robot forward at half
+ forward(63);
+                                                                               speed until the touch sensor in digital-port 10 is pressed,
+ untilTouch(dgtl10);
+                                                                               and then stop.
+ stop();
+
+
+
+
+ Until Release
+ The robot continues what it was doing until the touch sensor is released out.
+
+                         Command:
+
+                         untilRelease(sensorPort);
+
+
+ Parameters: sensorPort
+ Acceptable Sensors for sensorPort:
+ DIGITAL ports 1 through 12 (and your names for them given in Motors and Sensors Setup.)
+
+ Usage without Parameters:
+                                                                               This snippet of code will run the robot forward until the
+ forward();
+                                                                               touch sensor in digital-port 6 is released, and then stop.
+ untilRelease();
+                                                                               The default sensor port is dgtl6 for untilRelease().
+ stop();
+
+
+ Usage with Parameters:
+                                                                               This snippet of code will run the robot forward at half
+ forward(63);
+                                                                               speed until the touch sensor in digital-port 10 is released,
+ untilRelease(dgtl10);
+                                                                               and then stop.
+ stop();
+
+
+
+
+ © 2011 Carnegie Mellon Robotics Academy / For use with VEX Robotics Systems                   ROBOTC Natural Language - VEX Cortex Reference • 10
+ROBOTC Natural Language - VEX Cortex Reference:
+ Until Bump
+ The robot continues what it was doing until the touch sensor is pressed in and then released out.
+ 					                            (A delay time in milliseconds can be specified as well.)
+                         Command:
+
+                         untilBump(sensorPort, delayTimeMS);
+
+
+ Parameters: sensorPort, delayTimeMS
+ Acceptable Sensors for sensorPort:
+ DIGITAL ports 1 through 12 (and your names for them given in Motors and Sensors Setup.)
+ Valid Range Values for delayTimeMS:
+ 0 to 3600000 and up.
+  Usage without Parameters:
+                                                                               This snippet of code will run the robot forward until the
+ forward();
+                                                                               touch sensor in digital-port 6 is pressed in and then
+ untilBump();
+                                                                               released out, and then stop. The default sensor port and
+ stop();
+                                                                               delay time are dgtl6 and 10 for untilBump().
+
+ Usage with Parameters:
+                                                                               This snippet of code will run the robot forward at half
+ forward(63);
+                                                                               speed until the touch sensor in digital-port 10 is pressed in
+ untilBump(dgtl10, 100);
+                                                                               and then released out (with a delay of 100ms), and then
+ stop();
+                                                                               stop.
+
+
+
+ Until Button Press
+ The robot continues what it was doing until a specified button on the VEX LCD is pressed. Connect the VEX LCD to
+ UART-port 2.
+
+                         Command:
+
+                         untilButtonPress(lcdButton);
+
+
+ Parameters: lcdButton
+ Valid LCD Buttons for lcdButton:
+ centerBtnVEX - VEX LCD center button
+ rightBtnVEX - VEX LCD right button
+ leftBtnVEX - VEX LCD left button
+
+ Usage without Parameters:
+                                                                               This snippet of code will run the robot forward until a
+ forward();
+                                                                               button on the VEX LCD is pressed. The default button is
+ untilButtonPress();
+                                                                               centerBtnVEX for untilBtnPress().
+ stop();
+
+
+ Usage with Parameters:
+                                                                               This snippet of code will run the robot forward at half
+ forward(63);
+                                                                               speed until the right button on the VEX LCD is pressed.
+ untilButtonPress(rightBtnVEX);
+ stop();
+
+ © 2011 Carnegie Mellon Robotics Academy / For use with VEX Robotics Systems                   ROBOTC Natural Language - VEX Cortex Reference • 11
+ROBOTC Natural Language - VEX Cortex Reference:
+ Until Sonar Greater Than
+ The robot continues what it was doing until the sonar sensor reads a value greater than a set distance in centimeters.
+
+                         Command:
+
+                         untilSonarGreaterThan(distance, sensorPort);
+
+
+ Parameters: distance, sensorPort
+ Acceptable Values for distance:
+ 0 to 647 (cm).
+ Acceptable Sensors for sensorPort:
+ DIGITAL ports 1 through 12 (and your names for them given in Motors and Sensors Setup.)
+
+ Usage without Parameters:
+                                                                               This snippet of code will run the robot forward until the
+ forward();
+                                                                               sonar sensor in digital-port 8+9 reads a value greater
+ untilSonarGreatherThan();
+                                                                               than 30 centimeters, and then stop. The default distance
+ stop();
+                                                                               and sensor ports are 30 and dgtl8(+dgtl9) for
+                                                                               untilSonarGreaterThan().
+ Usage with Parameters:
+                                                                               This snippet of code will run the robot forward at half
+ forward(63);
+                                                                               speed until the sonar sensor in digital-port 2+3 reads a
+ untilSonarGreatherThan(45, dgtl2);
+                                                                               value greater than 45 centimeters, and then stop.
+ stop();
+
+
+
+
+ Until Sonar Less Than
+ The robot continues what it was doing until the sonar sensor reads a value less than a set distance in centimeters.
+
+                         Command:
+
+                         untilSonarLessThan(distance, sensorPort);
+
+
+ Parameters: distance, sensorPort
+ Acceptable Values for distance:
+ 0 to 647 (cm).
+ Acceptable Sensors for sensorPort:
+ DIGITAL ports 1 through 12 (and your names for them given in Motors and Sensors Setup.)
+
+ Usage without Parameters:
+                                                                               This snippet of code will run the robot forward until the
+ forward();
+                                                                               sonar sensor in digital-port 8+9 reads a value less than
+ untilSonarLessThan();
+                                                                               30 centimeters, and then stop. The default distance
+ stop();
+                                                                               and sensor ports are 30 and dgtl8(+dgtl9) for
+                                                                               untilSonarLessThan().
+ Usage with Parameters:
+                                                                               This snippet of code will run the robot forward at half
+ forward(63);
+                                                                               speed until the sonar sensor in digital-port 2+3 reads a
+ untilSonarLessThan(45, dgtl2);
+                                                                               value less than 45 centimeters, and then stop.
+ stop();
+
+ © 2011 Carnegie Mellon Robotics Academy / For use with VEX Robotics Systems                   ROBOTC Natural Language - VEX Cortex Reference • 12
+ROBOTC Natural Language - VEX Cortex Reference:
+ Until Potentiometer Greater Than
+ The robot continues what it was doing until the potentiometer sensor reads a value greater than a set position.
+
+                         Command:
+
+                         untilPotentiometerGreaterThan(position, sensorPort);
+
+
+ Parameters: position, sensorPort
+ Valid Range Values for position:
+ 0 to 4095 (However due to mechanical stops, you may be limited to the range of 5 to 4090.)
+ Acceptable Sensors for sensorPort:
+ ANALOG ports 1 through 8 (and your names for them given in Motors and Sensors Setup.)
+
+ Usage without Parameters:
+                                                                               This snippet of code will run the motor on port 6 at
+ startMotor();
+                                                                               speed 95 until the potentiometer in analog-port 6
+ untilPotentiometerGreaterThan();
+                                                                               reaches a value greater than 2048, and then stop. The
+ stop();
+                                                                               default position and sensor port are 2048 and in6 for
+                                                                               untilPotentiometerGreaterThan().
+ Usage with Parameters:
+                                                                               This snippet of code will run the motor on port 8 at speed
+ startMotor(port8, 63);
+                                                                               63 until the potentiometer in analog-port 4 reaches a
+ untilPotentiometerGreaterThan(4000, in4);
+                                                                               value greater than 4000, and then stop.
+ stop();
+
+
+
+
+ Until Potentiometer Less Than
+ The robot continues what it was doing until the potentiometer sensor reads a value less than a set position.
+
+                         Command:
+
+                         untilPotentiometerLessThan(position, sensorPort);
+
+
+ Parameters: position, sensorPort
+ Valid Range Values for position:
+ 0 to 4095 (However due to mechanical stops, you may be limited to the range of 5 to 4090.)
+ Acceptable Sensors for sensorPort:
+ ANALOG ports 1 through 8 (and your names for them given in Motors and Sensors Setup.)
+
+ Usage without Parameters:
+                                                                               This snippet of code will run the motor on port 6 at
+ startMotor();
+                                                                               speed 95 until the potentiometer in analog-port 6
+ untilPotentiometerLessThan();
+                                                                               reaches a value greater than 2048, and then stop. The
+ stop();
+                                                                               default position and sensor port are 2048 and in6 for
+                                                                               untilPotentiometerLessThan().
+ Usage with Parameters:
+                                                                               This snippet of code will run the motor on port 8 at speed
+ startMotor(port8, 63);
+                                                                               63 until the potentiometer in analog-port 4 reaches a
+ untilPotentiometerLessThan(40, in4);
+                                                                               value less than 40, and then stop.
+ stop();
+
+ © 2011 Carnegie Mellon Robotics Academy / For use with VEX Robotics Systems                   ROBOTC Natural Language - VEX Cortex Reference • 13
+ROBOTC Natural Language - VEX Cortex Reference:
+ Until Dark
+ The robot continues what it was doing until the line tracking sensor reads a value darker than a specified threshold.
+
+                         Command:
+
+                         untilDark(threshold, sensorPort);
+
+
+ Parameters: threshold, sensorPort
+ Valid Range Values for threshold:
+ (light) 0 to 4095 (dark)
+ Acceptable Sensors for sensorPort:
+ ANALOG ports 1 through 8 (and your names for them given in Motors and Sensors Setup.)
+
+ Usage without Parameters:
+                                                                               This snippet of code will run the robot forward until the line
+ forward();
+                                                                               tracking sensor in analog-port 2 reads a value darker than
+ untilDark();
+                                                                               1500, and then stop. The default threshold and sensor
+ stop();
+                                                                               port are 1500 and in2 for untilDark().
+
+ Usage with Parameters:
+                                                                               This snippet of code will run the robot forward at half
+ forward(63);
+                                                                               speed until the line tracking sensor in analog-port 4 reads
+ untilDark(1005, in4);
+                                                                               a value darker than 1005, and then stop.
+ stop();
+
+
+
+
+ Until Light
+ The robot continues what it was doing until the line tracking sensor reads a value lighter than a specified threshold.
+
+                         Command:
+
+                         untilLight(threshold, sensorPort);
+
+
+ Parameters: threshold, sensorPort
+ Valid Range Values for threshold:
+ (light) 0 to 4095 (dark)
+ Acceptable Sensors for sensorPort:
+ ANALOG ports 1 through 8 (and your names for them given in Motors and Sensors Setup.)
+
+ Usage without Parameters:
+                                                                               This snippet of code will run the robot forward until the line
+ forward();
+                                                                               tracking sensor in analog-port 2 reads a value lighter than
+ untilLight();
+                                                                               1500, and then stop. The default threshold and sensor
+ stop();
+                                                                               port are 1500 and in2 for untilLight().
+
+ Usage with Parameters:
+                                                                               This snippet of code will run the robot forward at half
+ forward(63);
+                                                                               speed until the line tracking sensor in analog-port 4 reads
+ untilLight(1005, in4);
+                                                                               a value lighter than 1005, and then stop.
+ stop();
+
+ © 2011 Carnegie Mellon Robotics Academy / For use with VEX Robotics Systems                    ROBOTC Natural Language - VEX Cortex Reference • 14
+ROBOTC Natural Language - VEX Cortex Reference:
+ Until Rotations
+ The robot continues what it was doing until the quadrature encoder rotations reach the desired value.
+
+                         Command:
+
+                         untilRotations(rotations, sensorPort);
+
+
+ Parameters: rotations, sensorPort
+ Valid Range Values for rotations:
+ 0.0 to 65000.0 and up.
+ Acceptable Sensors for sensorPort:
+ DIGITAL ports 1 through 11 (and your names for them given in Motors and Sensors Setup.)
+
+ Usage without Parameters:
+                                                                               This snippet of code will run the robot forward for 1.0
+ forward();
+                                                                               rotations using a quadrature encoder in digital-port 1+2,
+ untilRotations();
+                                                                               and then stop. The default rotations and sensor port are
+ stop();
+                                                                               1.0 and dgtl1(+dgtl2) for untilRotations().
+
+ Usage with Parameters:
+                                                                               This snippet of code will run the robot forward at half
+ forward(63);
+                                                                               speed for 2.75 rotations using a quadrature encoder in
+ untilRotations(2.75, dgtl3);
+                                                                               digital-port 3+4, and then stop.
+ stop();
+
+
+
+
+ Until Encoder Counts
+ The robot continues what it was doing until the quadrature encoder counts reach the desired value.
+
+                         Command:
+
+                         untilEncoderCounts(counts, sensorPort);
+
+
+ Parameters: counts, sensorPort
+ Valid Range Values for counts:
+ 0 to 65000 and up.
+ Acceptable Sensors for sensorPort:
+ DIGITAL ports 1 through 11 (and your names for them given in Motors and Sensors Setup.)
+
+ Usage without Parameters:
+                                                                               This snippet of code will run the robot forward for 360
+ forward();
+                                                                               encoder counts (1.0 rotations) using a quadrature
+ untilEncoderCounts();
+                                                                               encoder in digital-port 1+2, and then stop. The default
+ stop();
+                                                                               rotations and sensor port are 360 and dgtl1(+dgtl2) for
+                                                                               untilEncoderCounts().
+ Usage with Parameters:
+                                                                               This snippet of code will run the robot forward at half
+ forward(63);
+                                                                               speed for 990 encoder counts (2.75 rotations) using a
+ untilEncoderCounts(990, dgtl3);
+                                                                               quadrature encoder in digital-port 3+4, and then stop.
+ stop();
+
+ © 2011 Carnegie Mellon Robotics Academy / For use with VEX Robotics Systems                   ROBOTC Natural Language - VEX Cortex Reference • 15
+ROBOTC Natural Language - VEX Cortex Reference:
+ Special Functions:
+ LED ON
+ Turn an LED in a specified digital-port ON.
+
+                         Command:
+
+                         turnLEDOn(sensorPort);
+
+
+ Parameters: sensorPort
+ Acceptable Sensors for sensorPort:
+ DIGITAL ports 1 through 12 (and your names for them given in Motors and Sensors Setup.)
+ Note that you must set these digital-ports to "VEX LED".
+
+ Usage without Parameters:
+                                                                               This snippet of code will turn an LED in digital-port 2 ON.
+ turnLEDOn();
+                                                                               The default sensor port is dgtl2 for turnLEDOn().
+
+ Usage with Parameters:
+                                                                               This snippet of code will turn an LED in digital-port 7 ON.
+ turnLEDOn(dgtl7);
+
+
+
+
+ LED OFF
+ Turn an LED in a specified digital-port OFF.
+
+                         Command:
+
+                         turnLEDOff(sensorPort);
+
+
+ Parameters: sensorPort
+ Acceptable Sensors for sensorPort:
+ DIGITAL ports 1 through 12 (and your names for them given in Motors and Sensors Setup.)
+ Note that you must set these digital-ports to "VEX LED".
+
+ Usage without Parameters:
+                                                                               This snippet of code will turn an LED in digital-port 2 OFF.
+ turnLEDOff();
+                                                                               The default sensor port is dgtl2 for turnLEDOff().
+
+ Usage with Parameters:
+                                                                               This snippet of code will turn an LED in digital-port 7 OFF.
+ turnLEDOff(dgtl7);
+
+
+
+
+ © 2011 Carnegie Mellon Robotics Academy / For use with VEX Robotics Systems                   ROBOTC Natural Language - VEX Cortex Reference • 16
+ROBOTC Natural Language - VEX Cortex Reference:
+ Flashlight ON
+ Turn a VEX Flashlight in a specified motor-port ON at a specified brightness.
+
+                         Command:
+
+                         turnFlashlightOn(motorPort, brightness);
+
+
+ Parameters: motorPort, brightness
+ Acceptable Motors for motorPort:
+ MOTOR ports 1 through 10 (and your names for them given in Motors and Sensors Setup.)
+ *NOTE* Brightness control only available in motor-ports 1 and 10, or 2 through 9 when connected to a VEX Motor
+ Controller 29.)
+ Valid Range Values for brightness:
+ (off) 0 to 127 (bright)
+
+ Usage without Parameters:
+                                                                               This snippet of code will turn a VEX Flashlight in motor-
+ turnFlashlightOn();
+                                                                               port 4 ON at brightness level 63 (half bright). The
+                                                                               default motor port and brightness are port4 and 63 for
+                                                                               turnFlashlightOn().
+ Usage with Parameters:
+                                                                               This snippet of code will turn a VEX Flashlight in motor-port
+ turnFlashlightOn(port10, 127);
+                                                                               10 ON at brightness level 127 (full bright).
+
+
+
+
+ Flashlight OFF
+ Turn a VEX Flashlight in a specified motor-port OFF.
+
+                         Command:
+
+                         turnFlashlightOff(motorPort);
+
+
+ Parameters: motorPort
+ Acceptable Motors for motorPort:
+ MOTOR ports 1 through 10 (and your names for them given in Motors and Sensors Setup.)
+
+ Usage without Parameters:
+                                                                               This snippet of code will turn a VEX Flashlight in motor-
+ turnFlashlightOff();
+                                                                               port 4 OFF. The default motor port is port4 for
+                                                                               turnFlashlightOff().
+
+ Usage with Parameters:
+                                                                               This snippet of code will turn a VEX Flashlight in motor-port
+ turnFlashlightOff(port10);
+                                                                               10 OFF.
+
+
+
+
+ © 2011 Carnegie Mellon Robotics Academy / For use with VEX Robotics Systems                   ROBOTC Natural Language - VEX Cortex Reference • 17
+

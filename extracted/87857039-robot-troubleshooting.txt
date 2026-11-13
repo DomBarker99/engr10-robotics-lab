@@ -1,0 +1,48 @@
+--- slide1.xml
+Download the Go-To-Beacon, without adding any codes, to check the operation of the robot: IRB, motors and connections to the IR Board. 
+The robot should spin if the red beacon is off, If the red beacon is on, the robot should successfully locate the red beacon and move towards it.
+Use State functions approach to write your program. This will make it easier to troubleshoot.
+Check your program before blaming the electronic and mechanical components for the robot not functioning as you intended.
+--- slide2.xml
+The Robot is not Responding at all
+Check the IR Board (IRB) using the test board: all five red led lights must be on. The 5 LEDs on the IRB are for status indication only.  They don’t serve any purpose for the operation of the board
+LED1 to LED3 show which IR detector is the active detector. In normal operation, however, the VEX controller scans these detectors at a high rate which gives the appearance of random flashing. LED2 and 3 appear to be on because they are blinking very fast   
+LED1 to 3
+LED 4 indicated the low/high sensitivity setting.  When LED 4 is on, the circuit is at the low sensitivity setting.  When it is off, the circuit is at the high sensitivity setting.
+LED4
+LED 5 indicates the tuning frequency.  When LED 4 is on, 1 kHz is selected, the robot is looking for red beacon.  When it is off, 10 kHz is selected, the robot is looking for the green beacon.  
+LED5
+--- slide3.xml
+Check the connections of the motor to the controller: are the motors connected to the correct ports?
+If the IRB is fine when testing it using the test apparatus, or If the LED3 is not visibly blinking, check the connections of the IRB to the controller
+--- slide4.xml
+Hsu/Youssefi
+4
+Connections between the IRB and the controller
+IRB
+J1 and J2 connectors
+--- slide5.xml
+The robot spins but does not see the red beacon
+Move the beacon closer to the robot, if it sees the beacon then the battery in the portable beacon or the one on the robot is running down
+The robot locates the red beacon but it avoids it
+The ambient light needs to be adjusted: it is originally set at 200
+The motors are connected to the wrong ports, switch the ports. Or wire extensions are connected wrong (black to black, red to red)
+The robot wonders too much while looking for the beacon
+Some of the PDs are not receiving the signal
+Make sure all 8 PDs are somewhat horizontal and not looking up or being blocked.
+--- slide6.xml
+
+--- slide7.xml
+The IRB was fine before, but it is dead now.
+Everything seems to work fine: IRB, motors are new, sensors are fine, connections are right, battery is fully charged, so what is wrong?
+It could be the controller, get another one from your lab instruction
+Check the wires for damage.
+Check the fuse, the board could have been shorted accidently
+Get a working board from your instructor
+The arm is not working, the motor is too weak to lift the arm
+As a last resource, use a counter weight at the back end of the arm, not the best solution since it increases the weight of the motor
+The best way is to fix this is to increase the torque applied to the arm. Attach a small gear to the motor shaft that meshes with a larger gear that is attached to the arm.
+--- slide8.xml
+The robot cannot see the green beacon
+Check the red LED 5, is it on? If it is , the robot is still looking for the red beacon, check your program, the frequency switch is not happening.
+If the the LED 5 is off, try using another green beacon, the green beacon’s battery is running low. Ask the lab instructor or the lab assistant to change beacon and the batteries

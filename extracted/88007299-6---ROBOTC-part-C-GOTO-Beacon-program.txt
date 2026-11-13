@@ -1,0 +1,271 @@
+--- slide1.xml
+GOTO Beacon – part CENGR 10Introduction to Engineering
+Ken Youssefi
+1
+Introduction to Engineering – E10
+--- slide2.xml
+Robot performance has 80 points.
+Because of a recent trend (lack of attendance) observed in all lab sections, starting this week, if you do not show up to your lab section you will lose 20 points per week. 
+If you are sick you will need to submit a doctor’s note to your lab instructor.
+Ken Youssefi
+2
+Introduction to Engineering – E10
+--- slide3.xml
+Ken Youssefi
+3
+Introduction to Engineering – E10
+Your job is to program the robot to:
+Take the green beacon out of the arena
+Stop at the red beacon
+Turn off the red beacon
+Find the green beacon
+Capture the green beacon
+Stop at the green beacon
+--- slide4.xml
+Hsu/Youssefi
+4
+Controller (Cortex)
+Motor and Servo ports
+8 analog and 12 digital ports. Digital ports are used for Limit, Bumper and Ultrasonic  sensors
+(Robot’s brain)
+--- slide5.xml
+Hsu/Youssefi
+5
+Connections between the IRB and the controller
+IRB
+J1 and J2 connectors
+--- slide6.xml
+Ken Youssefi
+Introduction to Engineering – E10
+6
+PD7
+PD0
+PD4
+Right side
+Left side
+IRB’s photo detectors
+--- slide7.xml
+What does the GOTO Beacon program do?
+Once the program is downloaded to the controller, the robot will spin in place and will look for the red beacon. If the red beacon is in sight, the robot will move towards it, otherwise it continues to spin.
+It is a head start for your job of programming the robot.
+Ken Youssefi
+7
+Introduction to Engineering – E10
+--- slide8.xml
+Ken Youssefi
+Introduction to Engineering – E10
+8
+The main program - task main ()
+The main program sets up all variables and repeatedly executes the three functions (sub programs): ReadPD, find_max, and move.
+Infinite loop
+--- slide9.xml
+#pragma config
+Ken Youssefi
+9
+Introduction to Engineering – E10
+#pragma config is a directive used in ROBOTC to configure specific settings for your robot hardware, such as motor ports and sensor types. They are available as soon as you turn on the controller. It goes at the start of the program
+The right Motor is connected to port 1
+The left Motor is connected to port 10
+--- slide10.xml
+Ken Youssefi
+Introduction to Engineering – E10
+10
+Variable PD_Sum is the sum of the intensity values of all the photo detectors; ambient light level is set at 200. So, if PD_Sum > 200, the red beacon is in sight.
+Photo Detector (PD)
+ReadPD function
+--- slide11.xml
+Ken Youssefi
+11
+Introduction to Engineering – E10
+ReadPD function
+This function reads the intensity of all 8 Infrared Photo detectors and stores
+the intensity (0 to 1023) into PD0-PD7 variables. It also produces the sum
+of all 8 readings (PD_sum). The sensing sensitivity is set by expose_time.
+--- slide12.xml
+Ken Youssefi
+Introduction to Engineering – E10
+12
+Find_max() function 
+This function determines which variable (among PD0-PD7) has the greatest value. The PD number is saved in the variable max_no. 
+--- slide13.xml
+Ken Youssefi
+Introduction to Engineering – E10
+13
+PD2 reads max intensity  max_no = 2  error = 4-2=2  steer=error*steer_sensitivity=2*20=40
+PD4
+PD7
+PD0
+PD4
+Red beacon
+Motor port 1
+Motor port 10
+Motor1 speed = 0+40+35=75, left side
+Motor10 speed=0+40-35=5, right side
+The robot turns right
+--- slide14.xml
+Ken Youssefi
+Introduction to Engineering – E10
+14
+Move function 
+--- slide15.xml
+Ken Youssefi
+Introduction to Engineering – E10
+15
+GOTO Beacon Global Variables
+=5;
+--- slide16.xml
+Ken Youssefi
+Introduction to Engineering – E10
+16
+Q1 – In GOTO Beacon program, which of the following instructions or functions selects the target beacon (red or green)?
+Quiz 18
+ freq =0;
+ Stop_level=6000;
+ Max_PD()
+ Setdigitaloutput(10,1)
+ Move()
+Q2 – If PD_sum<ambient, what would the GOTO Beacon program do?
+ Stops all motors
+ Makes the robot spin
+ Move at the Slow Speed level
+ Makes the left motor run faster
+ Makes the right motor run faster
+--- slide17.xml
+Ken Youssefi
+Introduction to Engineering – E10
+17
+How to add to the GOTO Beacon program to perform the required task?
+Use state variable ! 
+Initialization
+While state==1
+Read PD();
+Find Max();
+Move ();
+Somewhere here, when red beacon is found and the robot is stopped, state=2.
+No infinite loop in all blocks!
+Find red beacon (provided)
+While state==2
+turn off red beacon. when confirmed, state=3
+--- slide18.xml
+Ken Youssefi
+Introduction to Engineering – E10
+18
+While state==3
+Go to green beacon
+When found, state=4
+Find green beacon
+While state==4
+Capture green (turn off) ,
+When confirmed.
+ state =5
+While state==5
+Exit the arena ,
+When confirmed.
+ state =6
+STOP
+--- slide19.xml
+Ken Youssefi
+Introduction to Engineering – E10
+19
+State 1 – search for the red beacon and move towards it, stop when the robot hits the red beacon and switch to State 2
+--- slide20.xml
+Ken Youssefi
+Introduction to Engineering – E10
+20
+State 2 - Arm operation – turning off the red beacon, switch to state 3  once the red beacon is off
+--- slide21.xml
+IRB placement – the electronic board should be mounted in front of the robot with a unobstructed view of the beacon.
+The board height should be approximately the same as the height of the round platform in the beacon that the transmitters are mounted 
+Ken Youssefi
+Introduction to Engineering – E10
+20
+--- slide22.xml
+Make sure the IRB does not come in contact with the metal parts to avoid shorting the board, mount the IRB using small standoffs of put an insulator under the board 
+Use standoffs or foam, separating the IRB from the chassis
+Photo detectors should be angled down to look straight at the beacon
+Ken Youssefi
+Introduction to Engineering – E10
+21
+--- slide23.xml
+23
+Place the controller in a location for easy access to plug the battery and other components
+Ken Youssefi
+Introduction to Engineering – E10
+--- slide24.xml
+Ken Youssefi
+Introduction to Engineering – E10
+24
+Place the controller in a location for easy access to plug the battery and other components
+--- slide25.xml
+Ken Youssefi
+Introduction to Engineering – E10
+25
+Selector
+Counter
+Tuning CKT
+Amplifier
+IR Receiver Board (IRB)
+--- slide26.xml
+Ken Youssefi
+Introduction to Engineering – E10
+26
+LEDs- Light Emitting Diodes: 
+   A special kind of diode: They allow current to      flow in one direction.
+The 5 LEDs on the IRB are for status indication only.  They don’t serve any purpose for the operation of the board.
+LED 1-3, show which IR detector is the active detector, blinking. 
+When LED 4 is on, the circuit is at the low sensitivity setting.
+LED 5 indicates the tuning frequency, when on, robot is looking for the red beacon
+--- slide27.xml
+Ken Youssefi
+Introduction to Engineering – E10
+27
+IR Receiver Board
+--- slide28.xml
+Ken Youssefi
+Introduction to Engineering – E10
+28
+amplifier
+Tuning circuit
+From previous stage
+Beacon Frequency Selection(filter)
+AD10Freq select (0=1kHz, 1=10kHz)
+U3
+U2
+U3
+--- slide29.xml
+Ken Youssefi
+Introduction to Engineering – E10
+29
+Infrared Detectors
+Selector
+1
+1
+0
+To next stage
+counter
+LEDs
+AD12 Counter reset
+AD11 pulse
+IR Detector Selection
+1
+1
+0
+Count output set to zero
+Get ready to count
+Increment count (0 to 1 transition)
+U1
+U4
+--- slide30.xml
+Ken Youssefi
+Introduction to Engineering – E10
+30
+Exposure Control Circuit
+AD11
+From previous stage
+To AD1 
+(VEX Analog input)
+Amplifier
+1
+Clear ‘film’ (discharge C14)
+0
+Open ‘shutter’ (allow C14 to charge)

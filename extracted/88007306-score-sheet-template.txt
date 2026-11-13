@@ -1,0 +1,100 @@
+Robot’s score sheet – Fall 2024
+Section 10 (Wed. 9:00)
+					          Comments				Weight	Time
+Item
+Group 1
+1 (Red: 25, 15)
+
+2 (Arm: 20, 15, 10)
+
+3 (Green: 10, 5)
+
+4 (Gr. Out: 10, 0)
+
+5 (weight: 10 <2kg)
+
+6 (Creativity: 5)
+
+Total
+
+					          Comments				Weight	Time
+Item
+Group 2
+1 (Red: 25, 15)
+
+2 (Arm: 20, 15, 10)
+
+3 (Green: 10, 5)
+
+4 (Gr. Out: 10, 0)
+
+5 (weight: 10 <2kg)
+
+6 (Creativity: 5)
+
+Total
+
+					          Comments				Weight	Time
+Item
+Group 3
+1 (Red: 25, 15)
+
+2 (Arm: 20, 15, 10)
+
+3 (Green: 10, 5)
+
+4 (Gr. Out: 10, 0)
+
+5 (weight: 10 <2kg)
+
+6 (Creativity: 5)
+
+Total
+
+					          Comments				Weight	Time
+Item
+Group 4
+1 (Red: 25, 15)
+
+2 (Arm: 20, 15, 10)
+
+3 (Green: 10, 5)
+
+4 (Gr. Out: 10, 0)
+
+5 (weight: 10 <2kg)
+
+6 (Creativity: 5)
+
+Total
+
+          Comments				Weight	Time
+Item
+Group 5
+1 (Red: 25, 15)
+
+2 (Arm: 20, 15, 10)
+
+3 (Green: 10, 5)
+
+4 (Gr. Out: 10, 0)
+
+5 (weight: 10 <2kg)
+
+6 (Creativity: 5)
+
+Total
+
+
+	•	Project Grading 
+Robot Performance (80 points)
+	•	Task 1 – (25 points) Full credit, 25 points, for locating the red beacon and stopping the robot successfully and 15 points for failing. 
+	•	Task 2 – (20 points) Successfully turning off the red beacon, this includes a successful arm design. Full credit for turning it off and 15 points for the arm operating but failing to turn off the beacon. 10 points if the arm fails to operate at all.
+	•	Task 3 – (10 points) Successfully locating the green beacon; 5 points if wanders around but cannot find green beacon
+	•	Task 4 – (10 points) Carrying or pushing the green beacon out of the arena which includes using bumper and limit switches to avoid obstacles.
+	•	Robot Weight – (10 points) Minimizing the weight of the robot; 10 points for 2.0 Kg or less (2.5 if large wheels are used), 8 points for 2.0 to 2.25 Kg range, 6 points for 2.25 to 2.75 range and 5 points for over 2.75 Kg. 
+	•	Creativity and Simplicity – (5 points) How creative and effective is the main robot body and the arm design
+
+	•	Each team has a maximum of three runs, with the best run used for scoring.
+	•	5 bonus points for finishing all tasks the fastest, and 5 bonus points for the lightest robot.
+

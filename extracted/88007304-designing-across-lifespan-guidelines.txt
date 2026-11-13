@@ -1,0 +1,70 @@
+                       ENGR 10: Designing Across the Lifespan
+                   Robot Design in the Context of Human Development
+This reflection addresses
+Area E GE Learning Outcome #1– Recognize the interrelation of the physiological,
+social/cultural, and psychological factors on their development across the lifespan.
+Guidelines
+Deliverable: Each student in your robot design project group will prepare a 400 to 500 word
+(about 1 page single spaced) reflection plus appropriate references. The reflection will link your
+experience designing and building a robot to selected research and best practices that
+examine human’s experience of robots at different points in the lifespan. Each student will
+upload a reflection to Canvas.
+Overview: As you have been designing and building your robot, you have been considering the
+particular tasks your robot must complete, but likely you have put little emphasis on design
+features related to the interaction of the robot with its user. Understanding human development is
+essential to best serving the user. Designers might want to consider issues that range from how
+much a robot looks like a person, to the size and color of the control buttons, to how big the
+letters are on the display, to how sound is used to engage the user. In addition, issues such as
+safety or collaboration among users might come into the design specifications. Finally, designs
+should consider a user’s cultural background, because culture affects, for example, language or
+perceptions of how to interpret emotions or physical characteristics, which in turn influence the
+way a user interacts with a robot. And the list goes on. The goal of this reflection is to examine
+how human development affects our decisions as engineers. That is, how do we specify our
+engineering designs so that we best serve the cognitive, social/emotional, and physical needs and
+limitations of the users of our designs?
+Assume that you have been asked to redesign your robot for multiple audiences. You are
+asked to reflect on design considerations for two stages of life 1) childhood and 2) late
+adulthood (65+ years old). Identify three aspects of a robot design that you would need to
+consider to serve these two types of users. For each aspect you have selected, describe
+    Developmental issues you need to consider for each group (for example mobility or
+       motors skills or familiarity with technology)
+    How you would design your robot to address each issue
+Your discussion must be based on information from reliable sources. We have posted a
+number of articles about these two populations on Canvas (see DESIGNING ACROSS THE
+LIFESPAN: Robot Readings).You may use these as a starting point, or find your own
+sources.
+The reflection should be single spaced, 1 inch margins all around and 12 point font with
+references and in-text citations in correct APA format (APA format is discussed in the The
+Everyday Writer that all students at SJSU should have purchased at the Bookstore or online). The
+paper should be at least 400 words (not counting title or references) and is worth 5 laboratory
+points.
+
+                                                1
+The reflection paper format:
+[A] Introduction (1 paragraph)
+     You will start with an introduction that: (a) presents the issue of designing to meet the
+     physical, emotional, social and/or cognitive needs of the user, (b) briefly introduces
+     the three design issues that will be presented (c) provides a succinct, but
+     comprehensive, overview of what the paper will do.
+[B] Body
+     The main body of your paper will focus on presenting the three design issues (one
+     paragraph each) and how the robot would need to be adapted to the two types of users
+     (children and older adults). Do not just make this up, but instead cite reliable sources
+     such as the papers posted on the Canvas web site to support your reasoning as to why
+     and how to address specific developmental stages.
+    Avoid direct quotes – Summarize everything in your own words. If you must quote,
+    you need a reference plus page number in text (e.g., Hogan et al, 2013, pg. 298) as
+    well as a full reference in the reference section at the end.
+[C] Conclusion
+     In your conclusion, briefly summarize the key design issues that you have identified
+     for these two populations and additional knowledge, data, or other resources you might
+     need to best design for these two groups.
+[D] References
+     Provide a separate page that lists in APA format the references for each article and
+     web-site cited in the paper.
+
+
+
+
+                                              2
+

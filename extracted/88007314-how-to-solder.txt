@@ -1,0 +1,34 @@
+--- slide1.xml
+To solder, heat the connection with the tip of the soldering iron for a few seconds,  then apply the solder. 
+Heat the connection, not the solder.
+Hold the soldering iron like a pen, near the base of the handle.
+Both parts that are being soldered have to be hot to form a good connection.
+How to Solder
+   Solder needs a clean surface on which to adhere. 
+Buff the copper foil of a PC board with steel wool before soldering.
+Remove any oil, paint, wax, etc. with a solvent, steel wool, or fine sandpaper.
+--- slide2.xml
+Keep the soldering tip on the connection as the solder is applied. 
+Solder will flow into and around well-heated connections.
+Use just enough solder to form a strong connection.
+Remove the tip from the connection as soon as the solder has flowed where you want it to be. Remove the solder, then the iron
+Don't move the connection while the solder is cooling.
+Don't overheat the connection, as this might damage the electrical component you are soldering
+--- slide3.xml
+Inspect the joint closely. It should look shiny and should have a shape like a volcano. 
+Wipe the tip of the iron on a damp sponge to clean it. The tip should now be shiny.
+Unplug the soldering iron when it is not in use
+--- slide4.xml
+    Caution: A soldering iron can heat to around 400°C, which can burn you or start a
+        fire, so use it carefully.
+  Unplug the iron when it is not in use.
+  Keep the power cord away from spots where it can be tripped over.
+  Take great care to avoid touching the tip of the soldering iron on a power line. If a
+         power cord is touched by a hot iron, there is a serious risk of burns and electric shock.
+  Always return the soldering iron to its stand when it is not in use.
+  Never put the soldering iron down on your work bench, even for a moment!
+  Work in a well-ventilated area.
+  The smoke that will form as you melt solder is mostly from the flux and can be quite
+         irritating. Avoid breathing it by keeping your head to the side of, not above, your work.
+  Solder contains lead, which is a poisonous metal. Wash your hands after using solder. 
+Safety Precautions 

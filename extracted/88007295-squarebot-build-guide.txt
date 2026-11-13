@@ -1,0 +1,830 @@
+                                                                                      ROBOTC
+
+     Squarebot
+     Squarebot 2.0 2.0   Building
+                   Building       Instructions
+                            Instructions (cont.)
+
+
+       1 Collect and identify the parts from the list of materials below:
+
+
+              materials			                                    		          qty
+              bearing flat                                                12
+              panel                                                       1
+              chassis rail					                                           4
+              chassis bumper                                              2
+              partially threaded beams, 2"                                4
+              keps nut                                                    38
+              8-32 hex screw, ¼"                                          26
+              8-32 hex screw, ½"                                          19
+              8-32 hex screw, 3/4”                                        1
+              motor                                                       2
+              2.75"  removable tire                                       4
+              1.895"  detachable hub                                      4
+              36-tooth gear                                               4
+              60-tooth gear                                               2
+              collar w/ threaded set screw                                10
+              square bar, 2"                                              2
+              square bar, 3"                                              4
+              6-32 hex screw, ½"                                          4
+
+
+
+
+© Carnegie Mellon Robotics Academy / For use with VEX® Robotics Systems         Squarebot 2.0 • 1
+                                                                                                                   ROBOTC
+
+     Squarebot 2.0 Building Instructions (cont.)
+
+           chassis rail x 4
+
+
+
+
+          chassis bumper x 2
+
+
+
+
+           2" partially threaded beam x 4                           8-32 hex screw, ¼" x 26        keps nut x 38
+
+
+
+
+                                                                    8-32 hex screw, ½" x 20
+
+
+
+
+                                                                   8-32 hex screw, 3/4” x1    6-32 hex screw, ½" x 4
+
+
+
+
+© Carnegie Mellon Robotics Academy / For use with VEX® Robotics Systems                                     Squarebot 2.0 • 2
+                                                                                                            ROBOTC
+
+     Squarebot 2.0 Building Instructions (cont.)
+
+          panel x 1                                                       motor x 2
+
+
+
+
+                                                                          2.75" removable tire x 4
+
+
+
+
+                                                                          1.895" detachable hub x 4
+
+
+
+
+© Carnegie Mellon Robotics Academy / For use with VEX® Robotics Systems                               Squarebot 2.0 • 3
+                                                                                                                   ROBOTC
+
+     Squarebot 2.0 Building Instructions (cont.)
+
+          36 tooth gear x 4                                               collar w/threaded set screw x 10
+
+
+
+
+                                                                          square bar, 2" x 2
+
+
+
+
+             .5"                                                          square bar, 3" x 4
+            60 tooth gear x 2
+
+
+
+
+                                                                          bearing flat x 12
+
+
+
+
+© Carnegie Mellon Robotics Academy / For use with VEX® Robotics Systems                                      Squarebot 2.0 • 4
+                                                                                                           ROBOTC
+
+     Squarebot 2.0 Building Instructions (cont.)
+
+        2 Inner chassis rails
+              You will need two chassis rails, one for the right side and one for the left side.
+              Orient them as shown, so that the narrow face is pointing up and the “open”
+              sides are facing each other.
+
+
+
+
+                                                                                   Parts needed in this step:
+
+
+                                                                                                           x 2
+
+
+              Add four bearing flats to the chassis rails (two per rail, on the outward-facing sides).  
+              Be sure to position the bearing flats such that the central hole of each bearing flat is
+              aligned with the fourth hole from the respective end of the chassis rail, as shown.
+
+
+
+
+                                                                                   Parts needed in this step:
+
+
+                                                                                                           x 4
+
+
+
+
+© Carnegie Mellon Robotics Academy / For use with VEX® Robotics Systems                             Squarebot 2.0 • 5
+                                                                                                         ROBOTC
+
+     Squarebot 2.0 Building Instructions (cont.)
+
+        2 Inner chassis rails (cont.)
+              Secure the bearing flats to the chassis rails using two ½" 8-32 screws and two keps nuts
+              per bearing flat, as shown.
+
+
+
+
+                                                                               Parts needed in this step:
+
+                                                                                           ½"
+                                                                                           x8            x 8
+
+
+
+
+              Your completed inner chassis rails should look like this when you’re done:
+
+
+
+
+© Carnegie Mellon Robotics Academy / For use with VEX® Robotics Systems                         Squarebot 2.0 • 6
+                                                                                                         ROBOTC
+
+     Squarebot 2.0 Building Instructions (cont.)
+
+        3 Outer chassis rails
+              Position two more chassis rails as shown, just as you did for the inner chassis rails.
+
+
+
+
+                                                                                   Parts needed in this step:
+
+
+                                                                                                         x 2
+
+
+
+
+              Add bearing flats to the inner faces of the two chassis rails. The center hole of the bearing
+              flat should be aligned with the eighth hole from the front end of the chassis rail, in the
+              middle row of holes.
+
+
+
+
+                                                                                  Parts needed in this step:
+
+
+                                                                                                              x 2
+
+
+
+
+© Carnegie Mellon Robotics Academy / For use with VEX® Robotics Systems                            Squarebot 2.0 • 7
+                                                                                                   ROBOTC
+
+     Squarebot 2.0 Building Instructions (cont.)
+
+        3 Outer chassis rails (cont.)
+              Secure each bearing flat with two ½" 8-32 screws and two keps nuts.
+
+
+
+
+                                                                             Parts needed in this step:
+
+                                                                                    ½"
+                                                                                    x4               x 4
+
+
+
+
+© Carnegie Mellon Robotics Academy / For use with VEX® Robotics Systems                      Squarebot 2.0 • 8
+                                                                                                         ROBOTC
+
+     Squarebot 2.0 Building Instructions (cont.)
+
+        3 Outer chassis rails (cont.)
+              Your outer chassis rails should now look like this:
+
+
+
+
+              Now add two bearing flats to the outer surface of each chassis rail, so the center
+              hole of each bearing flat is over the fourth hole from the respective end of the
+              chassis rail, as shown. These are the same positions as the bearing flats you put
+              on the inner chassis rails earlier.
+
+
+
+
+                                                                                 Parts needed in this step:
+
+
+                                                                                                          x 4
+
+
+
+
+© Carnegie Mellon Robotics Academy / For use with VEX® Robotics Systems                            Squarebot 2.0 • 9
+                                                                                                      ROBOTC
+
+     Squarebot 2.0 Building Instructions (cont.)
+
+        3 Outer chassis rails (cont.)
+              Secure the bearing flats to the chassis rails using two ½" 8-32 screws and two
+              keps nuts per bearing flat.
+
+
+
+
+                                                                                Parts needed in this step:
+
+                                                                                      ½"
+                                                                                      x8              x 8
+
+              Your outer chassis rails should now look like this:
+
+
+
+
+© Carnegie Mellon Robotics Academy / For use with VEX® Robotics Systems                        Squarebot 2.0 • 10
+                                                                                                        ROBOTC
+
+     Squarebot 2.0 Building Instructions (cont.)
+
+        4 Motor Subassembly
+              Before starting on the motor subassembly, make sure that the clutch is installed
+              in the motor, as shown.
+
+
+
+
+                                                                                Parts needed in this step:
+
+
+                                                                                                        x 2
+
+
+
+
+              Insert a 2" square beam into each clutch, making sure that they seat firmly.
+              The square bar will act as the motor’s drive shaft.
+
+
+
+
+                                                                                 Parts needed in this step:
+
+                                                                                		                       2"
+                                                                                                         x 2
+
+
+
+
+© Carnegie Mellon Robotics Academy / For use with VEX® Robotics Systems                          Squarebot 2.0 • 11
+                                                                                                          ROBOTC
+
+     Squarebot 2.0 Building Instructions (cont.)
+
+        4 Motor Subassembly (cont.)
+              Slide the pre-assembled inner chassis rails onto the square bar motor shafts,
+              so that the shafts go through the middle hole in the middle row of each rail.
+
+
+
+
+              Install one bearing flat on the outward-facing side of each chassis rail, with the
+              front hole of the bearing flat sliding onto the motor shaft as shown.
+
+
+
+
+                                                                                  Parts needed in this step:
+
+
+                                                                                                           x 2
+
+
+
+
+© Carnegie Mellon Robotics Academy / For use with VEX® Robotics Systems                            Squarebot 2.0 • 12
+                                                                                                     ROBOTC
+
+     Squarebot 2.0 Building Instructions (cont.)
+
+        4 Motor Subassembly (cont.)
+              Your assembly should now look like this:
+
+
+
+
+              Secure the bearing flat to the inner chassis rail and motor using two ½" 6-32 screws
+              per motor. Note that these are the thinner screws, not the usual 8-32 ones.
+
+
+
+
+                                                                               Parts needed in this step:
+
+                                                                               			                   ½"
+                                                                                                     x 4
+
+
+              Your assembly should now look like this:
+
+
+
+
+© Carnegie Mellon Robotics Academy / For use with VEX® Robotics Systems                       Squarebot 2.0 • 13
+                                                                                                     ROBOTC
+
+     Squarebot 2.0 Building Instructions (cont.)
+
+        5 Chassis Subassembly
+              Insert a 3" square bar through the center hole of each unoccupied bearing flat, as shown.
+              Do not push them all the way through. Push the end of the bar about ¼" through the rail.
+
+
+
+
+                                                                               Parts needed in this step:
+                                                                                                    3"
+                                                                                                    x 4
+
+
+
+
+© Carnegie Mellon Robotics Academy / For use with VEX® Robotics Systems                       Squarebot 2.0 • 14
+                                                                                                        ROBOTC
+
+     Squarebot 2.0 Building Instructions (cont.)
+
+        5 Chassis Subassembly (cont.)
+              Slide metal collars (with threaded screws) onto each of the 2" and 3" square bars,
+              mounting them flush with the surface of the bearing flat against which they will sit.
+              Be sure the square bars don’t get pushed further in while you put the collars on.
+
+
+
+
+                                                                                  Parts needed in this step:
+
+
+                                                                                                         x 6
+
+
+
+
+              Once the collars and bars are in position, tighten the threaded screws with
+              the thinner allen wrench to keep the collars from sliding out of place.
+
+
+
+
+© Carnegie Mellon Robotics Academy / For use with VEX® Robotics Systems                          Squarebot 2.0 • 15
+                                                                                                         ROBOTC
+
+     Squarebot 2.0 Building Instructions (cont.)
+
+        5 Chassis Subassembly (cont.)
+              Slide a 60-tooth gear onto the drive axle of each motor, pushing it flush against
+              the collar that you added in the previous step.
+
+
+
+
+                                                                                 Parts needed in this step:
+
+                                                                                              60-tooth
+                                                                                              x 2
+
+
+
+
+© Carnegie Mellon Robotics Academy / For use with VEX® Robotics Systems                           Squarebot 2.0 • 16
+                                                                                                      ROBOTC
+
+     Squarebot 2.0 Building Instructions (cont.)
+
+        5 Chassis Subassembly (cont.)
+              Slide a 36-tooth gear onto each of the remaining square bars, pushing them
+              flush against the collars.
+
+
+
+
+                                                                                Parts needed in this step:
+
+                                                                                          36-tooth
+                                                                                          x 4
+
+
+
+
+              Add another collar to the end of the 2” shafts (the ones directly connected to the motor).
+              Slide them down so that they are flush with the larger gear. Make sure they are tightened.
+
+
+
+
+                                                                                Parts needed in this step:
+
+
+                                                                                                     x 2
+
+
+© Carnegie Mellon Robotics Academy / For use with VEX® Robotics Systems                        Squarebot 2.0 • 17
+                                                                                                       ROBOTC
+
+     Squarebot 2.0 Building Instructions (cont.)
+
+        5 Chassis Subassembly (cont.)
+              Tighten the threaded screws with the thinner allen wrench.
+
+
+
+
+              Your kit includes two differently sized black spacers. Slide one of each onto the
+              shafts with the smaller gears (those not directly connected to the motors), as shown.
+
+
+
+
+                                                                                 Parts needed in this step:
+
+                                                                                        x 4           x 4
+
+
+
+
+© Carnegie Mellon Robotics Academy / For use with VEX® Robotics Systems                         Squarebot 2.0 • 18
+                                                                                                          ROBOTC
+
+     Squarebot 2.0 Building Instructions (cont.)
+
+        5 Chassis Subassembly (cont.)
+              Install the pre-assembled outer chassis rails onto the current assembly. All three of the
+              square bars sticking out of the inner rail should go through bearing flats on the outer rail.
+
+
+
+
+              Note: If you find that your gears are sliding on the axles, you can insert the 0.182" and
+              0.318" plastic spacers included in the kit to block them into place.
+
+
+
+
+© Carnegie Mellon Robotics Academy / For use with VEX® Robotics Systems                          Squarebot 2.0 • 19
+                                                                                                      ROBOTC
+
+     Squarebot 2.0 Building Instructions (cont.)
+
+        5 Chassis Subassembly (cont.)
+              Place chassis bumpers on the front and rear of the chassis rails, as shown.
+
+
+
+
+                                                                                Parts needed in this step:
+
+
+                                                                                                      x 2
+
+
+
+
+© Carnegie Mellon Robotics Academy / For use with VEX® Robotics Systems                        Squarebot 2.0 • 20
+                                                                                                        ROBOTC
+
+     Squarebot 2.0 Building Instructions (cont.)
+
+        5 Chassis Subassembly (cont.)
+              Secure the vertical faces of the chassis bumpers to the end of the chassis rails
+              using four ¼" 8-32 screws and keps nuts in the front, and four in the back.
+
+
+
+
+                                                                                  Parts needed in this step:
+
+                                                                                       ¼"
+                                                                                       x8               x 8
+
+
+
+
+© Carnegie Mellon Robotics Academy / For use with VEX® Robotics Systems                          Squarebot 2.0 • 21
+                                                                                                      ROBOTC
+
+     Squarebot 2.0 Building Instructions (cont.)
+
+        5 Chassis Subassembly (cont.)
+              Connect four 2” standoffs using four ¼” 8-32 screws. Place them as shown and be sure
+              to note that two of them are on the edge and two are one space away from the edge.
+              Connect the parts using the thicker allen wrench while holding the standoff in place.
+
+
+
+
+                                                                             Parts needed in this step:
+
+                                                                                   ¼"
+                                                                                   x 4		          x4
+
+
+
+
+© Carnegie Mellon Robotics Academy / For use with VEX® Robotics Systems                     Squarebot 2.0 • 22
+                                                                                                         ROBOTC
+
+     Squarebot 2.0 Building Instructions (cont.)
+
+        5 Chassis Subassembly (cont.)
+              Secure the horizontal faces of the chassis bumpers to the top of the chassis rails using
+              four ¼" 8-32 screws and four keps nuts, two in the front and two in the back.
+
+
+
+
+                                                                                 Parts needed in this step:
+
+                                                                                       x 4		             x4
+
+
+
+
+© Carnegie Mellon Robotics Academy / For use with VEX® Robotics Systems                          Squarebot 2.0 • 23
+                                                                                                     ROBOTC
+
+     Squarebot 2.0 Building Instructions (cont.)
+
+        5 Chassis Subassembly (cont.)
+              Install the small green tires (2.75" Removable Tire and 1.895" Hub) on the 3" square
+              beams, as shown. Slide them down so they are flush with the bearing flats.
+
+
+
+
+                                                                               Parts needed in this step:
+
+
+                                                                                                     x 4
+
+
+
+
+© Carnegie Mellon Robotics Academy / For use with VEX® Robotics Systems                       Squarebot 2.0 • 24
+                                                                                                           ROBOTC
+
+     Squarebot 2.0 Building Instructions (cont.)
+
+        5 Chassis Subassembly (cont.)
+              Slide the collars onto the shafts such that they are flush against the wheels.
+              Tighten the collars in place with the thinner allen wrench.
+
+
+
+
+                                                                                  Parts needed in this step:
+
+
+                                                                                               		         x4
+
+
+
+
+© Carnegie Mellon Robotics Academy / For use with VEX® Robotics Systems                             Squarebot 2.0 • 25
+                                                                                                          ROBOTC
+
+     Squarebot 2.0 Building Instructions (cont.)
+
+        5 Chassis Subassembly (cont.)
+              Position the micro controller on your robot as shown.
+
+
+
+
+                                                                                  Parts needed in this step:
+
+
+                                                                                                            x 1
+
+
+
+
+              Attach the micro controller to the chassis using four ½” 8-32 screws and keps nuts,
+              as shown. Insert the screws into the small holes in the micro controller to hold it in
+              position properly.
+
+
+
+
+                                                                                  Parts needed in this step:
+
+                                                                                           ½”
+                                                                                           x 4		          x4
+
+
+
+
+© Carnegie Mellon Robotics Academy / For use with VEX® Robotics Systems                            Squarebot 2.0 • 26
+                                                                                                           ROBOTC
+
+     Squarebot 2.0 Building Instructions (cont.)
+
+        6 Canopy Assembly
+              You will need a punched panel to begin constructing the canopy.
+              You are constructing a seperate part in this segment, which will later be
+              attached to Squarebot.
+
+
+
+
+                                                                                 Parts needed in this step:
+
+                                                                                                     x 1
+
+
+
+              Attach the receiver to the punched panel using four ¼” 8-32 screws and four keps nuts
+              as shown. Be sure to leave one empty row of holes on the left of the receiver.
+
+
+
+
+                                                                              Parts needed in this step:
+                                                                                               ¼”
+                                                                                      x 1      x 4          x 4
+
+
+
+
+© Carnegie Mellon Robotics Academy / For use with VEX® Robotics Systems                         Squarebot 2.0 • 27
+                                                                                                       ROBOTC
+
+     Squarebot 2.0 Building Instructions (cont.)
+
+        6 Canopy Assembly (cont.)
+              Attach the antenna holder using a 3/4” 8-32 screw and keps nut, securing the screw
+              through the middle hole on the left edge of the canopy. Then, slide the yellow antenna
+              wire from the receiver inside the antenna sleeve and place it into the antenna holder.
+
+
+
+
+                                                                          Parts needed in this step:
+                                                                                                3/4”
+
+                                                                                x 1    x 1      x 1      x 1
+
+
+
+
+© Carnegie Mellon Robotics Academy / For use with VEX® Robotics Systems                       Squarebot 2.0 • 28
+                                                                                                         ROBOTC
+
+     Squarebot 2.0 Building Instructions (cont.)
+
+        6 Canopy Assembly (cont.)
+              If you are using a VEX rechargable battery pack, attach the battery strap along the back
+              row of the punched pannel using two ½” 8-32 screws. Be sure it is oriented properly.
+
+
+
+
+                                                                                Parts needed in this step:
+
+                                                                                             ½”
+                                                                                   x 1       x 2          x 2
+
+
+
+
+© Carnegie Mellon Robotics Academy / For use with VEX® Robotics Systems                        Squarebot 2.0 • 29
+                                                                                                        ROBOTC
+
+     Squarebot 2.0 Building Instructions (cont.)
+
+        6 Canopy Assembly (cont.)
+              Take the blue rechargable Vex battery and orient it as shown. If you are using the blue
+              VEX AA battery holder, simply attach it to the canopy in place of the battery pack.
+
+
+
+
+                                                                                Parts needed in this step:
+
+                                                                                                        x 1
+
+
+
+
+              Lock the battery into place using the battery strip.
+
+
+
+
+© Carnegie Mellon Robotics Academy / For use with VEX® Robotics Systems                        Squarebot 2.0 • 30
+                                                                                                          ROBOTC
+
+     Squarebot 2.0 Building Instructions (cont.)
+
+        6 Canopy Assembly (cont.)
+              Attach the canopy to the robot. To do this, secure the canopy onto the four offsets
+              you attached earlier using four ¼” 8-32 screws.
+              You will have to offset the canopy by one hole eiter to the left or the right.
+
+
+
+
+                                                                                    Parts needed in this step:
+
+                                                                                                         ¼”
+                                                                                                         x 4
+
+
+
+
+© Carnegie Mellon Robotics Academy / For use with VEX® Robotics Systems                           Squarebot 2.0 • 31
+                                                                                                          ROBOTC
+
+     Squarebot 2.0 Building Instructions (cont.)
+
+        7 Wire Assembly
+              Plug the wire coming from the robot’s right motor into “MOTORS” port 2. The side
+              of the controller with the LEDs is the front.
+              Be sure to plug in the wire correctly and gently. The wires should slide in easily
+              when properly oriented.
+
+
+
+
+© Carnegie Mellon Robotics Academy / For use with VEX® Robotics Systems                            Squarebot 2.0 • 32
+                                                                                                    ROBOTC
+
+     Squarebot 2.0 Building Instructions (cont.)
+
+        7 Wire Assembly (cont.)
+              Plug the wire that is attached to the left motor into “MOTORS” port 3 on the
+              micro controller.
+
+
+
+
+© Carnegie Mellon Robotics Academy / For use with VEX® Robotics Systems                      Squarebot 2.0 • 33
+                                                                                 ROBOTC
+
+     Squarebot 2.0 Building Instructions (cont.)
+
+        7 Wire Assembly (cont.)
+              Plug the battery into the back of the micro controller.
+
+
+
+
+© Carnegie Mellon Robotics Academy / For use with VEX® Robotics Systems   Squarebot 2.0 • 34
+                                                                                                        ROBOTC
+
+     Squarebot 2.0 Building Instructions (cont.)
+
+        7 Wire Assembly (cont.)
+              Take the 9” RJ-10 wire (the yellow wire that looks like a phone cable) and plug one end
+              into the back of the receiver module. Plug the other end into the port marked “Rx 1” on
+              the back of the micro controller.
+
+
+
+
+                                                                 Parts needed in this step:
+
+
+                                                                                      x 1
+
+
+
+
+© Carnegie Mellon Robotics Academy / For use with VEX® Robotics Systems                       Squarebot 2.0 • 35
+

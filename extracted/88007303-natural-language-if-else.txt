@@ -1,0 +1,151 @@
+                                                                                                                            ROBOTC
+
+          Reference
+
+
+          if Statements with Natural Language
+          An if Statement allows your robot to make a decision. When your robot reaches an if Statment in the
+          program, it evaluates the condition contained between the parenthesis. If the condition is true, any
+          commands between the braces are run. If the condition is false, those same commands are ignored.
+
+          Pseudocode of an if Statment:
+
+                 if(condition)                                            (condition)
+                 {                                                        Either true or false
+
+                     // true-commands                                     (true) commands
+                 }                                                        Commands placed here will run
+                                                                          if the (condition) is true.
+
+
+
+
+        Example program containing two if Statements:
+
+                task main()
+                {
+                  while(true)
+                  {
+                     if(SensorValue(bumper) == 0)                                 (condition)
+                                                                                  true if the sensor is unpressed; false otherwise
+                   {
+                       startMotor(port3, 63);                                     (true) commands
+                   }                                                              Commands here run if the
+                                                                                  (condition) is true.
+
+                   if(SensorValue(bumper) == 1)                                   (condition)
+                   {                                                              true if the sensor is pressed; false otherwise
+
+                      stopMotor(port3);                                           (true) commands
+                    }                                                             Commands here run if the
+                                                                                  (condition) is true.
+                  }
+                }
+
+
+
+
+          This program uses a Bumper Switch and two if Statements to control when the port3 motor moves.
+          The first if Statement sets the motor to half power forward if the Bumper Switch has not been
+          pressed, while the second turns the motor off if it has been pressed. Continually repeating these
+          two behaviors within the while loop causes the motor to spin forward while the Bumper Switch is
+          released, and to remain stopped for as long as it is pressed.
+
+
+
+
+© Carnegie Mellon Robotics Academy / For use with VEX® Robotics Systems                                                     if Statement
+                                                                                                                          ROBOTC
+
+          Reference
+
+
+          if-else Statements with Natural Language
+          The if-else Statement is an expansion of the basic if Statement. The “if” section still checks the
+          condition and runs the appropriate commands when it evaluates to true, but using the “else” allows
+          for specific code to be run only when the condition is false.
+
+
+          Pseudocode of an if-else Statment:
+
+                 if(condition)                                             (condition)
+                 {                                                         Either true or false.
+
+                     // true-commands                                      (true) commands
+                 }                                                         Commands placed here will run
+                                                                           if the (condition) is true.
+                 else
+                 {
+                     // false-commands                                     (false) commands
+                 }                                                         Commands placed here will run
+                                                                           if the (condition) is false.
+
+
+
+
+          Example program containing an if-else Statement:
+
+                task main()
+                {
+                  while(true)
+                  {
+                                                                                      (condition)
+                    if(SensorValue(sonarSensor)>25)                                   true if the sensor reads over 25;
+                   {                                                                  false otherwise
+                      startMotor(port3, 63);
+                                                                                      (true) commands
+                   }                                                                  Commands here run if the
+                                                                                      (condition) is true.
+                   else
+                   {
+                      stopMotor(port3);                                               (false) commands
+                    }                                                                 Commands here run if the
+                                                                                      (condition) is false.
+                  }
+                }
+
+
+
+
+          This if-else Statement tells the robot to run port3 at half power if the nearest object the Ultrasonic
+          Rangefinder detects is more than 25 centimeters away. If the Ultrasonic Rangefinder detects an
+          object closer than 25 centimeters, then the “else” portion of the code will be run and the motor on
+          port3 will stop moving. The outer while(true) loop makes the if-else statement repeat forever.
+
+
+
+
+© Carnegie Mellon Robotics Academy / For use with VEX® Robotics Systems                                                   if Statement
+                                                                                                          ROBOTC
+
+          Reference
+
+
+          Embedded if/if-else Statements
+          with Natural Language
+          Sometimes, especially with more complex tasks, your robot will have to make multiple consecutive
+          decisions before performing a behavior. This can be accomplished by embedding, or placing, if
+          Statments within other if Statements.
+
+          Pseudocode of an embedded if Statment:
+
+                 if(condition)                                            (condition)
+                 {                                                        Either true or false
+
+                   if(condition)
+                   {
+                       // true-commands                                   (true) commands
+                                                                          Commands placed here will run
+                   }                                                      if the (condition) is true.
+                   else
+                   {
+                       // false-commands                                  (false) commands
+                   }                                                      Commands placed here will run
+                                                                          if the (condition) is false.
+                 }
+
+
+
+
+© Carnegie Mellon Robotics Academy / For use with VEX® Robotics Systems                                   if Statement
+

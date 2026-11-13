@@ -1,0 +1,53 @@
+--- slide1.xml
+https://www.vexrobotics.com/
+https://www.vexrobotics.com/customer/account/create/
+Creating VEX account
+--- slide2.xml
+NOTE: Either create a VEX account or sign into your existing account.
+Go to VEX’s customer account login page
+--- slide3.xml
+Step 1: Go to Robotc.net
+Select current version and run the EXE file
+Installing ROBOTC
+Step 2: run the EXE file
+--- slide4.xml
+Click the “Next” button when the Setup Wizard window pops up.
+Skip to Step 4 if running the installer. If the installer was downloaded, continue here. 
+Locate the ROBOTC for VEX installation file in the Downloads folder or in the alternative location where the file was saved.
+Double click to start the installation.
+--- slide5.xml
+Change where the file will be saved to the preferred destination folder and click Next
+Click to accept the terms.
+Click Next to continue
+--- slide6.xml
+Click Install to begin the installation process.
+Select the Complete setup and click Next.
+--- slide7.xml
+Click Install on any prompts that ask to confirm the installation of VEX Robotics Ports.
+--- slide8.xml
+Click Finish to close the Install Shield Wizard
+Click Install to allow VEX Robotics Inc. to install device software
+--- slide9.xml
+ROBOTC should be included within the list of programs available and two shortcut icons should be visible on the desktop. One shortcut is for Graphical ROBOTC which is a block-based programming language (not used for E10) whereas the other shortcut is for the text-based ROBOTC programming language
+We use ROBOTC text-based programming for E10
+--- slide10.xml
+Double click to open the ROBOTC 4.0
+--- slide11.xml
+Hsu/Youssefi
+11
+ROBOTC – text base program
+Open a new file
+--- slide12.xml
+Hsu/Youssefi
+12
+Your program goes between the curly brackets
+The program has to be compiled and then downloaded to the controller
+compiler errors appear in the status section here, indicating the problem line
+--- slide13.xml
+Hsu/Youssefi
+13
+Text Functions
+--- slide14.xml
+Hsu/Youssefi
+14
+Natural Language

@@ -1,0 +1,275 @@
+--- slide1.xml
+1
+Ken Youssefi
+Introduction to Engineering – E10
+Robot Project Overview
+--- slide2.xml
+Ken Youssefi
+Introduction to Engineering – E10
+2
+60 min. program on robots(13 min.)
+https://www.youtube.com/watch?v=s1ISnaUQgUE
+--- slide3.xml
+Ken Youssefi
+Introduction to Engineering – E10
+3
+https://www.youtube.com/watch?v=jHoSZYewnUM
+Boston Dynamics Humanoid (Atlas), Physical AI (11 min.)
+--- slide4.xml
+Ken Youssefi
+Introduction to Engineering – E10
+4
+Spot robot (16 min.)
+https://www.youtube.com/watch?v=DecYIeB44aE
+--- slide5.xml
+Ken Youssefi
+Introduction to Engineering – E10
+5
+Boston Dynamics Atlas robot (15 min.)
+https://www.youtube.com/watch?v=nAgTgwak7ME
+--- slide6.xml
+Mars Curiosity Rover
+Size: About the size of a small SUV -- 10 x 9 feet and 7 feet tall
+Weight: 900 kilograms (2,000 pounds)
+Features: Geology lab, rocker-bogie suspension, rock-vaporizing laser and lots of cameras
+Launched:Nov. 26, 2011
+Landed:Aug. 5, 2012
+6
+Ken Youssefi
+Introduction to Engineering – E10
+Jupiter -  24.8 m/s2   380
+Mars -  3.71 m/s2    57
+Moon -  1.622 m/s2  25
+Selfie
+Earth - 9.8 m/s2     150 lb
+--- slide7.xml
+Ken Youssefi
+Introduction to Engineering – E10
+7
+Mars Perseverance Rover (2020)
+Main Job: The Perseverance rover will seek signs of ancient life and collect rock and soil samples for possible return to Earth.
+Launch: July 30, 2020, Cape Canaveral Air Force Station, Florida
+Landed: Feb. 18, 2021
+Landing Site: Jezero Crater, Mars
+Mission Duration: At least one Mars year (about 687 Earth days)
+Tech Demo: The Mars Helicopter is a technology demonstration, hitching a ride on the Perseverance rover.
+--- slide8.xml
+Ken Youssefi
+Introduction to Engineering – E10
+8
+Science objectives
+Looking for habitability – identify past environment that supported life
+Seeking biosigniture – seeking signs of past life 
+Collecting rocks and soil sample and leaving them on the surface
+Preparing for humans – test oxygen production from atmosphere
+Fly the Helicopter– test the conditions for traveling by air
+--- slide9.xml
+Ken Youssefi
+Introduction to Engineering – E10
+9
+Mars helicopter experiment named Ingenuity.
+--- slide10.xml
+Robots Everywhere
+Oberon maps ocean terrain and films simultaneously (Australia)
+Oberon - underwater robot 
+Underwater robot used for port security. Also used to check out the presence of cracks in nuclear reactors’ water tanks, ship’s hull, propeller shafts, ….
+10
+Ken Youssefi
+Introduction to Engineering – E10
+--- slide11.xml
+Ken Youssefi
+Introduction to Engineering – E10
+11
+SoFi - MIT
+Ocean One robot -Stanford
+--- slide12.xml
+Ken Youssefi
+Introduction to Engineering – E10
+12
+$1400
+$100
+$400
+Smallest drone
+Fly and Dive
+--- slide13.xml
+Ken Youssefi
+Introduction to Engineering – E10
+13
+Best drone for photography
+--- slide14.xml
+Ken Youssefi
+Introduction to Engineering – E10
+14
+Self Driving Cars
+--- slide15.xml
+Ken Youssefi
+Introduction to Engineering – E10
+15
+Tesla’s Model X
+--- slide16.xml
+Ken Youssefi
+Introduction to Engineering – E10
+16
+Cybercab
+Cybervan
+--- slide17.xml
+Ken Youssefi
+Introduction to Engineering – E10
+17
+Waymo taxis on SF streets
+Tesla cybercar ( no steering wheel and pedals
+--- slide18.xml
+Ken Youssefi
+Introduction to Engineering – E10
+18
+Optimus
+--- slide19.xml
+Ken Youssefi
+Introduction to Engineering – E10
+19
+Humanoid robots, by 2030
+--- slide20.xml
+The da Vinci® Surgical System
+Only da Vinci overcomes the limitations of both traditional open surgery and conventional minimally invasive surgery. The da Vinci System is a sophisticated robotic platform designed to expand the surgeon’s capabilities and offer a minimally invasive option for major surgery.
+With da Vinci, small incisions are used to introduce miniaturized wristed instruments and a high-definition 3D camera. Seated comfortably at the da Vinci console, your surgeon views a magnified, high-resolution 3D image of the surgical site. 
+20
+--- slide21.xml
+Ken Youssefi
+Introduction to Engineering – E10
+21
+SJSU Robot – NASA competition in Johnson Space Center (2015)
+SJSU Robotics Club
+--- slide22.xml
+Ken Youssefi
+Introduction to Engineering – E10
+22
+URC (University Rover Challenge) at Mars desert research station in Hanksville Utah, 2016
+SJSU Robotics Club, Nessie
+--- slide23.xml
+Ken Youssefi
+Introduction to Engineering – E10
+23
+SJSU Robotics Club, project Loch team 2017
+--- slide24.xml
+Ken Youssefi
+Introduction to Engineering – E10
+12
+https://www.sjsurobotics.org/
+2025
+--- slide25.xml
+Gemini-Scout, a remotely controlled rolling robot designed specifically to lead search-and-rescue efforts in the event of a mining disaster
+ Urban search and rescue robot moving through rubble in 2007
+25
+Ken Youssefi
+Introduction to Engineering – E10
+--- slide26.xml
+Ken Youssefi
+Introduction to Engineering – E10
+26
+Scenario
+Companion robots can help people with day-to-day tasks that they might have difficulty completing on their own.  One example is the Care-O-bot that was developed in Germany (http://www.care-o-bot.de/en/care-o-bot-3/download/videos.html#video2en). In this scenario, the robot is helping someone make dinner. 
+Your objective in this project is to design an autonomous robot that is capable of turning off a stove, locating a plate and then bringing it to the person in another room.
+Care-O-Bot (source: Fraunhofer)
+--- slide27.xml
+Ken Youssefi
+Introduction to Engineering – E10
+27
+In our lab, the stove and the plate are simulated by two infrared emitting and receiving beacons - a red one (1 kHz) representing the stove and a green one (10kHz) representing the plate.  Your robot’s task is to turn off the red beacon (stove), and move the green one (plate) across the starting line.   
+The Beacons
+GREEN Beacon - representing the plate 
+RED Beacon - representing the stove 
+Beacons are infrared emitters. The beacons can be turned off by pressing down on the push-button switch located on top. 
+--- slide28.xml
+Starting line
+ 8 ft
+ 12 ft
+ 2 ft
+ 2 ft
+Beacons will be randomly placed in this box, at least 4 ft from each other.
+Arena wall 10 inch tall
+Starting position: middle of starting line, facing away from the beacons
+Red Beacon
+Green
+Beacon
+> 4 ft
+28
+Ken Youssefi
+Introduction to Engineering – E10
+--- slide29.xml
+The Overall System
+1 kHz
+10 kHz
+Red beacon
+Green beacon
+Controller (on board computer)
+Motor driven wheels
+Battery
+Infrared receiver diodes (eyes of robot)
+Motor driven Arm to turn the red and green beacons off
+  Laptop
+Program developed to control the robot
+Download the program (usb cable)
+Sensor 
+29
+Ken Youssefi
+Introduction to Engineering – E10
+--- slide30.xml
+Ken Youssefi
+Introduction to Engineering – E10
+30
+--- slide31.xml
+Three tasks
+Mechanical (Robot’s chassis, arm and the drive system design)
+Electronics (Robot’s eye, IR Board)
+Programming  (C++ language, block prog.)
+Mechatronics
+ME106
+31
+Ken Youssefi
+Introduction to Engineering – E10
+--- slide32.xml
+Programming Task
+Learn how to setup and navigate the environment of EasyC Cortex version 4.
+32
+Ken Youssefi
+Introduction to Engineering – E10
+Cortex controller
+--- slide33.xml
+Programming Task
+Learn how to setup and navigate the environment of ROBOTC Cortex version 4.0 by VEX company.
+33
+Ken Youssefi
+Introduction to Engineering – E10
+https://www.vexrobotics.com
+Create an account to have access to Products, Educational documents, free software download (ROBOTC and supports. The instructions to sign in, install the ROBOTC and configure the default settings are in Lab Canvas shell.
+VEX’s web site
+--- slide34.xml
+Programming Task
+Study the program GOTO_BEACON, this will take the robot to the red beacon.
+Test and fine tune the Robot 
+Develop your own robot control program to turn the red beacon off, find the green beacon and take it out of the arena.
+	  (brainstorming, the entire team) 
+34
+Ken Youssefi
+Introduction to Engineering – E10
+--- slide35.xml
+Electronics Task
+Build the Infrared receiver board
+Learn how to identify electronics components
+Learn how to solder 
+Learn the basic theory of operation of the board
+Learn how to interface to the board via software (device driver)
+35
+Ken Youssefi
+Introduction to Engineering – E10
+--- slide36.xml
+Mechanical Design
+Body of the Robot		
+Type and placement of motors and sensors (sensing and actuating)
+Design the arm to turn off the red beacon 
+Mechanism to secure the green beacon
+36
+Ken Youssefi
+Introduction to Engineering – E10
+VEX’s Robotics Kit
+Squarebot

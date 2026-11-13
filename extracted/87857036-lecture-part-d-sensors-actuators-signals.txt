@@ -1,0 +1,503 @@
+--- slide1.xml
+1
+Sensors, Actuators, Signals, and ComputersPart DKen Youssefi 
+--- slide2.xml
+2
+Smart products are items that use technology (like sensors, connectivity, and AI) to enhance their functionality, often connecting to the internet or a smartphone to offer added features
+Home Products
+Wearables & Personal Devices
+Appliances
+Clothing & Accessories
+Toys
+Learning/Education Tools
+Cleaning Devices
+Kitchen Gadgets
+Robot
+Autonomous vehicle
+Numerical Controlled Machine
+Vehicle engines
+Conveyor systems
+Aircraft engines
+Assembly systems
+Medical devices 
+Military devices 
+--- slide3.xml
+3
+Mechatronics – a design process that includes
+Mechanical engineering
+Electrical engineering
+Control engineering 
+Computer engineering
+    ME106
+Mechatronics
+--- slide4.xml
+4
+Mechatronics System (Smart Products)
+Sensors
+Product
+Actuation
+Variables
+Actuators
+Command signal
+Sensing signal
+Microprocessors and Microcontrollers
+Control code
+--- slide5.xml
+5
+Sensors measure changes in physical quantities, (Input). The changes occur in response to some excitation, for example, heat, motion, force, light, force, ….. and convert that into an electrical signal. 
+Devices which perform an “Output” function are generally called Actuators and are used to control some external device, for example movement or sound.
+Brain (microprocessor)
+--- slide6.xml
+6
+Tesla’s Model 3 sensors
+--- slide7.xml
+7
+2023 Cadillac Escalade sensors
+--- slide8.xml
+8
+Tesla’s Model S sensors
+--- slide9.xml
+9
+LiDAR– Light Detection and Ranging
+The LiDAR instrument fires rapid pulses of laser light at a surface, some at up to 150,000 pulses per second. A sensor on the instrument measures the amount of time it takes for each pulse to bounce back. Differences in laser return times and wavelengths can then be used to make digital 3-D representations of the target.
+https://www.youtube.com/watch?v=zREAEdXzOcw
+--- slide10.xml
+10
+iRobot Roomba (automatic vacuum cleaner)
+Roomba – 2:30 min
+--- slide11.xml
+Types of Signals
+Analog: An analog signal is a continuous signal and is often represented by a V(t).
+    A dimmer light switch continuously increases/decreases the current.
+11
+Digital : A digital signal is a discrete time signal, binary signal.
+    An On/Off light switch applies a fixed, predetermined voltage.
+--- slide12.xml
+12
+Analog vs Digital Sensors (signals)
+--- slide13.xml
+13
+Button
+Motion
+Digital Sensors
+Bumper Switch Sensor 
+Lever
+Limit Switch Sensor 
+Ultrasonic sensor
+--- slide14.xml
+Optical Shaft Encoder
+14
+Hsu/Youssefi
+The optical shaft encoder is a digital sensor. It is used to measure rotational movement.
+Disc with equally spaced slots (90 slot for VEX) 
+As the disc rotates, an infrared light sensor is used to count the number of slots passed.
+--- slide15.xml
+15
+Example
+Write a program to make the robot move for 1 meter and then stop.
+Assume wheel diameter = .0637 m
+Number of wheel turns = 1/.200 = 5
+if count reaches 450 (count for 5 turns x 90) 
+5 turns of the wheel = 1 meter
+Wheel circumference = πd = .200
+Number of slots on the disc code of the optical shaft encoder = 90
+--- slide16.xml
+16
+Proximity sensors
+Analog Sensors
+There are 4 main types of proximity sensors
+A proximity sensor is a sensor able to detect the presence of nearby objects without any physical contact. 
+Inductive proximity sensors create an electromagnetic field and detects the change in the field when metallic object is brought near. used to detect the presence of metals (iron steel, aluminum, copper, …)
+Capacitive proximity sensors sense "target" objects due to the target's ability to be electrically charged. Since even non-conductors can hold charges, this means that just about any object can be detected with this type of sensor (plastic, glass, wood, liquid, ….) 
+Consider the following when deciding on the type of proximity sensor to use: Object, accuracy, range and distance, response time, environment, size, and cost
+--- slide17.xml
+17
+Part detection on conveyors: Sensors detect the presence of metal parts as they move along a conveyor belt, triggering actions like stopping the belt, counting items, or sorting.
+Machine tool positioning: Inductive sensors are used to detect the position of moving parts (e.g., in CNC machines) for precise control
+End-of-travel detection: They help ensure that moving parts like robotic arms or actuators stop at their intended positions
+Gear position sensing: Detects gear lever positions in vehicles
+Elevator positioning: Sensors detect when the elevator reaches certain floors by sensing metal flags or targets
+Gripper detection: Confirms whether a robotic gripper has picked up a metallic object.
+Works well in dirty, oily, or wet environments because there’s no exposed sensing surface
+Inductive proximity sensor application
+--- slide18.xml
+18
+Plastic part detection: On an assembly line, capacitive sensors can detect plastic or glass parts where inductive sensors would fail
+Level detection in containers: They can sense liquids, powders, or granular materials through plastic or glass walls, so no direct contact with the substance is needed.
+Water level sensing: In dishwashers and washing machines, to control the water intake
+Touch interfaces: Capacitive sensors are the tech behind many touch switches on microwaves, ovens, and light panels.
+Presence of transparent or thin materials: Detects plastic film, paper, or glass during packaging processes
+Fluid level monitoring: Detects levels of brake fluid, coolant, or washer fluid.
+Capacitive proximity sensor application
+--- slide19.xml
+19
+Ultrasonic proximity sensors detects the presence of objects through emitting high-frequency ultrasonic range. It does so through the conversion of electrical energy. Similarly to capacitive sensors, it can detect objects in solid, liquid, or granular as well.
+Probably the easiest among all, it only comprises an ultrasonic transmitter and an ultrasonic receiver.
+IR (infrared) proximity sensors , in short it detects the presence of an object by emitting a beam of infrared light. It works similarly to ultrasonic sensors, though instead of using sonic waves, IR is transmitted.
+--- slide20.xml
+20
+Ultrasonic proximity sensors are great when you need to detect objects regardless of material (metal, plastic, glass, liquid, etc.) and want non-contact sensing over a longer range than inductive or capacitive sensors
+Robotic distance sensing: Help robots avoid obstacles or navigate tight spaces.
+Blind spot detection or object avoidance: In autonomous and semi-autonomous systems.
+Parking sensors: The classic use — those “beeps” when you're backing up are ultrasonic sensors detecting obstacles behind your car.
+Transparent object detection: Unlike photoelectric sensors, ultrasonic sensors don’t get confused by clear plastic or glass
+Fill level control: Sense how full a container is during filling operations
+Why Use Ultrasonic?
+Detects almost any material
+Works in dark or visually noisy environments
+Can measure distance precisely (often mm-level)
+Works well with irregularly shaped or soft objects
+Ultrasonic proximity sensor application
+--- slide21.xml
+21
+Motion detection in alarms or lights: IR sensors can detect movement by measuring changes in reflected IR signals.
+Perimeter sensing: In low-cost applications, can be used to detect nearby intruders or movement
+Obstacle avoidance for robots: Widely used in Arduino/DIY robots to detect walls or objects
+Line following robots: With IR reflectance sensors that detect contrast between black and white surfaces.
+Short-range object detection: Useful for edge detection on moving platforms or counters
+Light switches or smart lighting systems: Turn lights on when you enter a room or walk near a fixture
+Gesture controls: Some devices use IR to sense swipes or hand waves.
+Automatic faucets & soap dispensers: Detect your hand using IR and activate water/soap flow
+Toilets: IR proximity sensors detect presence and trigger flushing.
+Touchless trash cans: Lid opens when you wave your hand near it.
+IR (Infrared) proximity sensor application
+--- slide22.xml
+22
+Dusty, smoky, or foggy environments
+Bright sunlight
+Non-reflective surfaces
+When NOT to Use IR
+Slower Response Time
+When NOT to Use Ultrasonic
+Complex Hardware Integration
+Not Precise Enough for Touch Input
+When NOT to Use Inductive
+Can Only Detect Metal
+No Position Sensing
+Too Bulky and Expensive
+Low Resolution
+When NOT to Use Capacitive
+Sensitive to Environmental Noise (electric)
+Affected by Humidity, Water, or Dirt
+Higher Power Consumption
+More Complex to Implement
+--- slide23.xml
+23
+Parameter
+Inductive
+Capacitive
+Ultrasonic
+Infrared (IR)
+Cost
+💲 Low (~$10–30)
+💲💲 Medium (~$20–60)
+💲💲💲 Higher (~$30–100+)
+💲 Very Low (~$1–20)
+Accuracy
+✅ High (for metal)
+✅ Medium-High
+✅ Medium
+⚠️ Lower (affected by surface/ambient light)
+Range
+🔁 Short (1–15 mm)
+🔁 Short (2–30 mm)
+📏 Long (up to 5–10+ m)
+🔁 Short (2–80 cm typical)
+Detects Material
+🧲 Metal only
+🧴 Metal + non-metal
+🌐 Any material
+🌐 Most reflective materials
+Environmental Tolerance
+💪 Excellent (dust, oil)
+⚠️ Sensitive to moisture/dust
+⚠️ Affected by wind/temp
+⚠️ Affected by sunlight/dust
+Response Time
+⚡ Fast (ms range)
+⚡ Fast
+🐢 Slower (due to sound travel)
+⚡ Fast (very quick)
+Typical Use Cases
+Industrial metal sensing
+Liquid level, plastics
+Distance, tank levels
+Gesture, touchless devices
+Size/Form Factor
+🧱 Medium to small
+🧱 Medium
+📦 Larger (bulkier)
+🪶 Very compact
+Proximity Sensor Comparison Table
+Sensor Type
+--- slide24.xml
+24
+A guide for selecting a proximity sensor
+--- slide25.xml
+25
+Accelerometer is an electromechanical device that measures acceleration forces. It sense motion and are used to detect changes in position, tilt, and orientation. Air bags, elevators, phones.
+Accelerometers
+Measure the amount of pressure, for example of a finger press, or the weight of someone standing on a surface
+Pressure and Force sensors 
+--- slide26.xml
+26
+Detect the amount of light striking the sensor, which is called a photocell, photoresistor,
+Analog Sensors
+Light sensors 
+Measure the air temperature in Fahrenheit or Celsius.
+Temperature sensors 
+Measure the position of a finger touch across a surface
+Ribbon sensors 
+Potentiometers
+Measure rotation or linear travel, and are used in car stereos, dimmers, equalizers, etc
+--- slide27.xml
+27
+Carbon Monoxide sensor
+Air Quality sensor
+Hydrogen sensor
+Nitrogen dioxide sensor
+Ammonia sensor
+Oxygen sensor
+Chemical sensors
+--- slide28.xml
+28
+Actuators
+Actuators are devices that is responsible for moving and controlling a mechanism or system: Rotary or linear -Electric, hydraulic or Pneumatic
+Stepper motor
+Divides a full rotation into a number of equal steps. No need for sensors or feedback system
+Servo motor
+Controls the rotation of the shaft, needs sensor and closed feedback system
+Electric motor (AC or DC)
+--- slide29.xml
+29
+Linear Actuators – Electric, Hydraulic, Pneumatic, 
+Hydraulic and Pneumatic actuators
+Electric (mechanical) power screw
+--- slide30.xml
+30
+Analog and Digital Signals
+--- slide31.xml
+31
+Analog and Digital Signals
+Light intensity
+Temperature
+Pressure
+Flow rate
+Force
+--- slide32.xml
+32
+Analog Signal
+Digital Signal
+Sensor
+Buffer
+Amplifier
+Low-pass filter
+Sample & hold
+A/D
+Converter
+Computer
+Memory
+0011  0010  0100
+0001  1010  0111
+0101  0011  0110
+--- slide33.xml
+33
+Voltage Level vs. Logic State
+    Digital Signal has a high noise immunity level – the level of noise that can be added to the signal without affecting its state.
+--- slide34.xml
+34
+Analog signals
+Digital Signals
+Analog Signal vs. Digital Signal
+Advantages
+Advantages
+Disadvantages
+Disadvantages
+Output subject to quantity errors from sampling
+Higher cost - requires lots of ‘bits’ and circuits
+Data processing delay
+Carries more information per second than analog, easy to process
+Maintains integrity over long distances
+High immunity to noise
+Represents ‘real world’ signals
+High resolution since it uses continuous range of values
+Efficient transmission, smaller bandwidth (1 wire, 1 signal), no delay
+Low cost and portable
+Can be impacted by noise
+Difficult to process - perform operations, storage
+--- slide35.xml
+35
+Analog Signal vs. Digital Signal
+--- slide36.xml
+36
+Analog – Digital Conversion
+DAC
+Bit 0
+Bit 9
+Analog output 
+Bit 0
+Bit 9
+Digital input 
+ADC
+Analog input 
+Digital output 
+--- slide37.xml
+37
+Binary Numbers - Bits, Bytes and Words
+Consider a number 7582, it has four digits
+The 2 is filling the “1s place”, the 8 is filling the “10s place”, the 5 is filling the “100s place” while the 7 is filling the “1000s place”.
+(7 * 1000) + (5 * 100) + (8 * 10) + (2 * 1) = 7000 + 500 + 80 + 2 = 7582
+A different way of expressing the same number is to use powers of 10 – this is a base 10 system.
+(7 * 103) + (5 * 102) + (8 * 101) + (2 * 100) = 7000 + 500 + 80 + 2 = 7582
+We can select any number as the base, for example 8, 5, ….
+Computers operate using the base 2 number system, also known as the binary number system.
+--- slide38.xml
+38
+Bits, Bytes and Words
+The word bit is an acronym for
+We can use the same method as base-10 to determine the value of 1011, but instead of 10 use 2:
+(1 * 23) + (0 * 22) + (1 * 21) + (1 * 20) = 8 + 0 + 2 + 1 = 11
+Decimal digits have 10 possible values ranging from 0 to 9, bits have only two possible values: 0 and 1. Therefore, a binary number is composed of only 0s and 1s, like 1011. 
+"Binary digIT."
+(7 * 103) + (5 * 102) + (8 * 101) + (2 * 100) = 7000 + 500 + 80 + 2 = 7582
+--- slide39.xml
+39
+ 0 =     0
+ 1 =     1
+ 2 =    10
+ 3 =    11
+ 4 =   100
+ 5 =   101
+ 6 =   110
+ 7 =   111
+ 8 =  1000
+ 9 =  1001
+10 =  1010
+11 =  1011
+12 =  1100
+13 =  1101
+14 =  1110
+15 =  1111
+16 = 10000
+17 = 10001
+18 = 10010
+19 = 10011
+20 = 10100
+Counting in decimal and binary from 0 to 20
+Binary
+Decimal
+0 and 1 are the same in both systems
+101 + 1 = 110
+Carrying over starts at the second number.
+11 + 1 = 100
+Binary Arithmetic
+There are four basic rules
+1)  0 + 0 = 0 and carry 0
+2)  0 + 1 = 1 and carry 0
+3)  1 + 0 = 1 and carry 0
+4)  1 + 1 = 0 and carry 1
+101 + 10 =
+1
+1
+1
+--- slide40.xml
+40
+Bits, Bytes and Words 
+Bits: (20)
+One ‘bit’ can only represent a binary state: 
+         0  or  1,    on  or  off,  stop or  go.    
+Bytes.  (23)
+One byte consists of 8 bits.
+Words: (24 or 25 or 26)
+Mega (M)
+2^20 = 1,048,576
+Giga (G)
+2^30 = 1,073,741,824
+For example: A 64-bit CPU works best with 8-byte (64-bit) words.
+A word refers to a fixed-sized unit of data that a computer’s processor handles at once.
+--- slide41.xml
+41
+Number of bits
+Number of different values that can be represented
+4-bit (1 nibble)
+24 =16
+8-bit (1 byte)
+28 = 256
+10-bit
+210 = 1024
+16-bit (1 word)
+216=65536
+32-bit
+232=4.294967296 x 10^9
+64-bit
+264=18.447x10^19
+--- slide42.xml
+42
+A 4-bit binary number
+Binary number: 0110 =
+Binary number: 1101 = 
+Least Significant Bit 
+LSB
+23
+(b3)
+22
+(b2)
+21
+(b1)
+20
+(b0)
+8
+4
+2
+1
+MSB
+Most Significant Bit
+(0x8)+(1x4)+(1x2)+(0x1)=6
+8+4+1=13
+16 8 4 2 1
+--- slide43.xml
+43
+With the advances made in technological, both the serial and parallel port have largely been replaced by the use of USB ports, and fewer new devices are designed to include either a serial or parallel port.
+Universal Serial Bus - USB
+USB ports support much faster (often 100x or greater) data transfers than serial or parallel.
+The USB industry standard exists in multiple versions including 1.1, 2.0, 3.0, 3.1 and 3.2. However, USB ports feature identical physical layouts no matter the version of USB supported.
+--- slide44.xml
+44
+USB version/Year
+Data transfer rate (Mbps)
+1.1 (1998)
+1.5 & 12 (keyboard and mouse)
+2.0 (2001)
+480 (high speed)
+3.0 (2008)
+4800 (Super Speed)
+3.1 (2014)
+9600 (Super Speed +)
+"B" connectors head "downstream" and connect to individual devices
+"A" connectors head "upstream" toward the computer
+3.2 (2017)
+21000 (Super Speed +)
+--- slide45.xml
+45
+Not all USB-C ports are created equal. Some laptops use USB-C just for charging while some laptops use USB-C for charging and data.
+--- slide46.xml
+Universal Serial Bus - USB
+46
+The USB gives you a single, standardized, easy-to-use way to connect up to 127 devices to a computer.
+4-Port Hub
+Inside a USB cable
+Data
+Power
+--- slide47.xml
+47
+USB - C
+--- slide48.xml
+48
+--- slide49.xml
+49
+What is a USB Type-C cable?
+USB-C is a small, versatile connector for mobile and portable devices like laptops, tablets and smartphones. It transfers data at high speeds, transmits video signals and delivers power to charge devices' batteries
+--- slide50.xml
+50
+USB Cable Construction
+The USB 3.0 adds two shielded data pairs to the USB 2.0 for faster data and video downloading.

@@ -1,0 +1,940 @@
+GUIDE FOR BUILDING THE
+
+CLAWBOT
+NOTE: This kit requires other components which are not included
+in order to build a complete working robot. The primary additional
+required component is a compatible VEX EDR robot control system.
+REFERENCE:
+
+
+                  5 HOLE                         10 HOLE   15 HOLE
+
+
+
+
+             [A20] CHASSIS BUMPER ANGLE, 20-HOLES LONG
+
+
+
+
+             [R16] CHASSIS RAIL, 16-HOLES LONG
+
+
+
+
+             [C20] C-CHANNEL, (1X2X1) 20-HOLES LONG
+
+
+
+
+             [C15] C-CHANNEL, (1X2X1) 15-HOLES LONG
+
+
+
+
+             [B20] BAR, 20-HOLES LONG
+
+
+
+
+             [SH-3] VEX 3” Square Shaft
+
+
+
+
+             [ZIP] 4” ZIP TIE
+
+
+
+2
+REFERENCE:
+
+
+         20 HOLE   25 HOLE                        30 HOLE
+
+
+                                                   [BR-I]
+                                                   Bearing Pop-Rivet
+                                                   (inside)
+                                                   [BR-O]
+                                                   Bearing Pop-Rivet
+                                                   (outside)
+                    [BF]             [ST-1]
+                    BEARING FLAT     8-32 threaded
+                                     Standoff (1” Long)
+
+
+
+
+                    [CPLR]                     [CP]
+                    Motor Coupler              Motor Coupler
+                                               Post
+
+
+
+
+                    [SP4.8]                    [COL]
+                    Thin Spacer (4.8 mm)       Shaft Collar with
+                                               8-32 x 1/8” setscrew
+
+
+
+                    [NK]                       [NL ]
+                    #8-32 Keps Nut             #8-32 Nylock Nut
+
+
+
+
+                    [SS-L]
+                    Long Motor Screw w/ Nylon Locking Patch
+
+
+
+                    [SS-S]
+                    short Motor Screw w/ Nylon Locking Patch
+
+
+
+
+                    [S12]
+                    #8-32 Button Head Screw x 1.5” Long
+
+
+
+                    [S4]
+                    #8-32 Button Head Screw x 1/2” Long
+
+
+
+                    [S2]
+                    #8-32 Button Head Screw x 1/4” Long           3
+REFERENCE:
+
+
+
+
+     [CLAW]                                        [M393]                                         [MC29]
+     CLAW ASSY                                     2-Wire Motor 393                               MOTOR
+     (shown not to scale)
+                                                   Module                                         CONTROLLER 29
+                                                   (shown not to scale)                           (shown not to scale)
+
+
+
+
+    [BST]                   [CTX]                                          [VNET]                          [BATT]
+    VEX Battery Strap       CORTEX                                         VEXnet Key                      7.2V RECHARGEABLE
+    (shown not to scale)    (shown not to scale)                           (shown not to scale)
+                                                                                                           BATTERY
+                                                                                                           (shown not to scale)
+
+
+
+
+     [G12]                  [G60]                                         [G84]                          [W4]
+     GEAR, 12 TOOTH         GEAR, 60 TOOTH                                GEAR, 84 TOOTH                 VEX WHEEL (4” DIAMETER)
+     (shown not to scale)   (shown not to scale)                          (shown not to scale)           (shown not to scale)
+
+
+4
+REFERENCE:
+
+
+
+            5/64”                                 3/32”             WRENCH
+
+
+
+
+ 1                                                    2
+                                                                        [NK] 8-32 KEPS NUT
+                                                           [11/32”]
+
+                        [SS-S] 1/4” MOTOR SCREW
+                                                                        [NL] 8-32 LOCK NUT
+
+
+
+
+                        [SS-L] 1/2” MOTOR SCREW
+
+                                                           [1/4”]
+             [5/64”]
+                                                                       [ST-1]
+
+
+
+
+ 3                                                    4
+                                                                       [S2] 1/4” SCREW
+
+
+
+
+                                                                       [S4] 1/2” SCREW
+
+
+
+
+                                                                       [S12] 1.5” SCREW
+                             [COL] COLLAR
+             [5/64”]                                      [3/32”]
+
+
+
+
+ 5         [BR-I]                                     6
+                       [BR] POP RIVETS
+
+
+
+  [BR-O]
+
+
+
+  [BF] BEARING FLAT
+
+
+
+
+                                                                                [BF] BEARING FLAT
+
+
+
+                                                                                                    5
+                                                                       [x2]
+    1 [x2]                     [BF]                       [R16]
+
+
+
+                  [BF]
+
+
+     [BF]
+
+
+
+
+               [BR-O]x6
+                                      [BR-I]x6
+
+
+
+
+    2                     [M393]                               [R16]
+
+
+
+
+    [BR-I]x5
+                                                          [SS-L]
+        [BR-O]x5
+                                                      [SS-S]
+                                           [BF]x3
+
+
+
+
+    3                          [M393]
+                                               [BR-I]x5
+
+                                                     [BR-O]x5
+
+
+
+
+                                                            [SS-S]
+    [R16]                                             [SS-L]
+                                      [BF]x3
+
+
+
+
+6
+ 4                                [C15]
+
+
+
+
+                                          [BF]
+
+
+    [BR-I]x4
+                                          [BF]
+            [BR-O]x4
+
+
+
+
+ 5
+                          [C15]
+
+
+
+
+           [BF]                                  [BR-I]x3
+                                     [BR-O]x3
+
+
+
+
+           [BF]
+
+
+
+
+ 6                 FROM STEP 5
+                                                 [M393]
+
+
+                       [CPLR]
+                         [CP]
+
+
+
+
+[SS-L]
+  [SS-S]
+
+
+
+
+                                                            7
+     7
+           [A2O]
+                                            FROM STEP 1
+
+                                   [S2]
+
+                                     [NK]
+
+
+
+
+                      [S2]
+                                     [NK]
+
+
+
+
+     8                           FROM STEP 1
+
+
+                   [S2]
+                          [NK]
+                                            FROM STEP 7
+
+
+
+
+    [S2]
+
+             [NK]
+
+
+
+
+     9
+                                 FROM STEP 2
+
+
+
+
+                                             FROM STEP 8
+
+                                     [NK]x2
+               [S2]x2
+
+
+
+
+8
+ 10                   FROM STEP 3
+
+         [S2]
+
+
+
+                     FROM STEP 9
+
+
+
+
+[S2]
+
+         [NK]x2
+
+
+
+
+ 11                  [A2O]
+                               [S2]x3
+
+       [S2]x3
+
+
+
+
+                               FROM STEP 10
+       [NK]x3
+                               [NK]x3
+
+
+
+
+ 12         [S2]x2
+
+                             FROM STEP 4
+       [NK]x2
+
+
+
+
+                              FROM STEP 11
+
+
+
+
+                                              9
+     13                                FROM STEP 6
+
+
+
+     FROM STEP 12
+
+
+
+                                             [NK]x2
+
+
+
+
+        [S2]x2
+
+
+
+
+                               [G60]             [COL]
+     14 FROM STEP 13                                     PUSH COLLARS
+                                                         TOGETHER BEFORE
+                                                         TIGHTENING SET SCREWS
+                              [SH-3]
+
+
+                                FULLY INSERT SHAFT
+                                INTO MOTOR!
+
+
+                               [COL]
+
+
+
+
+     15           [SP4.8]x2
+                                                                  PUSH COLLARS
+                                                                  TOGETHER BEFORE
+                                                                  TIGHTENING SET
+                 [G60]x2                                          SCREWS
+
+
+
+       [COL]x2
+
+
+                                           [SH-3]x2
+
+                                       [COL]x2
+
+
+                                 [W4]x2
+
+
+
+
+10
+                                                                PUSH COLLARS
+                                                                TOGETHER BEFORE
+                                                                TIGHTENING SET
+
+16
+                                                                SCREWS
+
+                     [G60]
+[COL]
+                     [SH-3]
+
+FULLY INSERT SHAFT
+INTO MOTOR!
+
+
+
+                      [COL]
+
+
+
+
+17
+                                                                PUSH COLLARS
+                                 PUSH COLLARS TOGETHER BEFORE
+                                                                TOGETHER BEFORE
+                                 TIGHTENING SET SCREWS
+                                                                TIGHTENING SET
+                                                                SCREWS
+
+
+
+
+[SH-3]x2
+
+
+  [COL]x2
+
+
+   [W4]x2
+
+          [SP4.8]x2
+                     [G60]x2
+                                       [COL]x2
+
+
+
+
+18
+                                                       [S2]
+
+
+
+
+                                                    [G84]
+                                  [ST-1]
+
+
+
+   [S2]
+                               [G84]
+
+
+
+
+                                                                                  11
+     19
+                                [S4]
+
+
+                                [S4]
+              [S4]
+
+
+              [S4]
+
+
+                     [NK]x4
+
+
+
+
+     20              [CLAW]
+
+
+                                        [NL]x2
+
+
+
+
+                              [S12]x2
+
+
+
+
+     21                                     [COL]x2
+
+
+
+
+     [SH-3]                                      [SP4.8]x2
+                                              [G12]x2
+         [COL]
+
+
+
+
+                                                                ROBOT
+                              FULLY INSERT SHAFT INTO MOTOR     FRONT
+      FROM                    BEFORE TIGHTENING SHAFT COLLARS
+      STEP 17
+
+
+
+
+12
+                   [COL]
+
+ 22                        SQUEEZE
+                           TOGETHER
+                           BEFORE
+                           TIGHTENING
+                           COLLARS!
+
+[COL]
+                               [COL]
+FROM STEP 20
+
+
+[SH-3]
+
+
+
+
+[COL]
+
+
+
+
+                                                                 ROBOT
+                                                                 FRONT
+                           FROM STEP 21
+
+
+                                                   *CHECK THAT ARM ROTATES UP
+                                                  AND DOWN SMOOTHLY WITH ONLY
+                                                     MINOR MOTOR RESISTANCE
+               [NK]x4
+ 23
+                                        [BST]x2
+
+
+
+
+                                          ROBOT
+                                          FRONT
+
+                                        [S4]x4
+
+
+
+
+                                                      MOUNT BATTERY STRAP
+                                                        UNDER CHASSIS
+
+
+
+
+                                                                            13
+     24
+                        [S4]x4
+
+
+
+                           [CTX-VNET]
+
+
+
+
+                                 [NK]x4
+
+
+
+
+     25
+
+
+
+
+      [S2]x4
+
+               [NK]x4
+
+
+
+
+14
+26
+
+[B20]
+
+
+
+
+27
+
+
+
+        [S2]x4
+                 [NK]x4
+
+
+
+
+         ROBOT
+         FRONT
+
+
+
+
+                          15
+                                           CLAW MOTOR
+
+
+
+
+     RIGHT DRIVE                                   ARM MOTOR
+          MOTOR
+
+
+
+
+                                   ROBOT
+                                   FRONT
+                     LEFT DRIVE
+                         MOTOR
+
+
+
+
+ CONFIGURATION BASED ON
+ CORTEX MICROCONTROLLER
+      DEFAULT CODE.
+
+
+
+
+                     UART 1
+                     UART 2
+                     I2C
+
+       1
+       2
+       3
+       4
+       5
+       6
+       7
+       8
+       1
+       2
+       3
+       4                      1
+       5                      2
+       6                      3
+       7                      4
+       8                      5
+       9                      6
+       10                     7
+       11                     8
+       12                     9
+       SP                     10
+
+
+
+            ROBOT
+
+            VEXnet
+
+
+            GAME
+
+
+
+
+16
+  PLUG IN WITH RED WIRE TOWARD CENTER OF CONTROLLER
+
+                                                                 MOTOR PORT 1
+
+                                                                                    LEFT DRIVE MOTOR
+
+
+
+
+MOTOR PORT 6                                              CONNECT
+                                                       BLACK TO BLACK
+                                                                                    CLAW MOTOR
+
+
+
+
+MOTOR PORT 7                                               CONNECT
+                                                         BLACK TO RED
+                                                                                    ARM MOTOR
+
+
+
+
+  PLUG IN WITH RED WIRE TOWARD CENTER OF CONTROLLER
+
+                                                                 MOTOR PORT 10
+
+                                                                                    RIGHT DRIVE MOTOR
+
+
+
+
+CLAW OPEN/CLOSE                                                                  ARM UP/DOWN
+
+
+
+                                        ROBOTICS DESIGN SYSTEM
+
+
+
+
+                               7                                         8
+
+                                            JOYSTICK
+
+
+                                              ROBOT
+
+
+                                              VEXnet
+
+
+                                              GAME
+
+
+                           4                  CONFIG                         1
+
+LEFT DRIVE                     3                                         2
+                                                                                       RIGHT DRIVE
+
+
+
+
+                   FOR MORE INFORMATION AND SUPPORT ON THE
+                  CORTEX MICROCONTROLLER AND VEXNET SYSTEM
+                       REFER TO www.VEXRobotics.com/cortex                                              17
+HIGH SPEED/LOW TORQUE MOTORS (Optional Configuration):
+     To modify the VEX 2-Wire Motor 393 into “High Speed Mode” simply swap out the final gear ratio using
+     the included change gears with the following procedure:
+         1. Remove the four screws in the corners        2. Lift off the top cover. Do not disturb the
+            of the front of the motor case.                  gears inside.
+
+
+
+
+        3. Lift off the output bushing and place to     4. Remove the middle gear and the output
+           the side. This will be used later.              shaft gear.
+
+
+
+
+        5. Install the high speed middle gear.          6. Install the high speed output shaft gear.
+
+
+
+
+        7. Install the output bushing removed             8. Replace the cover and four screws
+            in step 3. Make sure the bushing                 removed in steps 1 and 2.
+            orientation is as shown.
+
+
+
+
+     High Speed Mode provides 60% faster rotational
+     speed with a 60% reduction in torque.
+18
+Expand and conquer.
+Once you’ve mastered the CLAWBOT, we challenge you to move onto even more advanced
+robot designs. Of course, all VEX mechanical gears, wheels, hardware and structural metal
+parts are cross-compatible for endless design possibilities. With hundreds more upgrade
+parts and accessories, the creative possibilities for your robot designs are limitless. 
+Visit www.VEXROBOTICS.com for more information.
+
+2 Wire                                           Tank Tread
+Motor 393                                        SKU 276-2168
+SKU 276-2177                                     $
+                                                     29.99
+$
+    19.99
+        MSRP
+                                                         MSRP
+
+
+
+
+High Strength                                    2.75" Omni
+Gear Kit                                         Wheels
+SKU 276-2250                                     SKU 276-1902
+
+$
+    29.99
+        MSRP
+                                                 $
+                                                     19.99
+                                                         MSRP
+
+
+
+Turntable                                        High Strength
+Bearing Kit                                      Sprocket & Chain
+SKU 276-1810                                     SKU 276-2252
+$
+    19.99
+        MSRP
+                                                 $
+                                                     39.99
+                                                         MSRP
+
+
+
+
+Booster                                          Performance
+Kit                                              Tool Kit
+SKU 276-2232                                     SKU 276-1645
+
+$
+    179.99
+        MSRP
+                                                 $
+                                                     39.99
+                                                         MSRP
+
+
+
+
+                                 www.VEXROBOTICS.com
+                                   The VEX Robotics Competition, presented by the Robotics
+                                   Education and Competition Foundation, offers unique and
+                                   challenging team-based
+                                   games that put high
+                                   school and middle school
+                                   students' engineering and
+                                   technology skills to the
+test. Students, with guidance from teachers and mentors,
+collaborate to build the most innovative robots possible and
+work together during competitions to obtain the most
+points possible. In addition to having a great time and
+building amazing robots, through their participation in the
+VEX Robotics Competition and their work within their team,
+students learn many academic and life skills.
+
+
+                                     Local VEX Robotics competitions are held in many
+                                     different cities, states and countries.
+                                     Visit RobotEvents.com to find the date and location of a
+                                     VEX competition near you. Teams can register online to
+                                     get an official team number, Team Welcome Kit and
+                                     register for VEX Robotics Competition events.
+
+
+
+
+Top teams from around the world participating in local,
+regional and national VEX Robotics Competitions will qualify
+for VEX Robotics international competitions and the VEX
+Robotics World Championship event held each Spring.
+
+
+
+
+                                    For more information
+                                    about the VEX Robotics Competition and the VEX Robotics
+                                    Design System, including various animations, videos, pictures
+                                    and results from past VEX Robotics Competition events, visit
+                                    VEXROBOTICS.com.
+
+
+
+
+                                                                                    Clawbot 276-2600-0512
+

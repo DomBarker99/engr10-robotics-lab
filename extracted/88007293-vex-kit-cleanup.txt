@@ -1,0 +1,11 @@
+--- slide1.xml
+NOT GOOD
+NOT GOOD
+GOOD
+Too many pieces!
+--- slide2.xml
+What should be inside the box
+3 to 4 bags of screws, collars, nuts, washers, spacers, ….
+Metal structures and components
+4 wheels of any kind
+3 motors or 2 motors and a servo

@@ -1,0 +1,167 @@
+                                                                                                                                     ROBOTC
+
+          Reference
+
+
+          Variables with Natural Language
+          Variables are places to store values (such as sensor readings) for later use, or for use in
+          calculations. There are three main steps involved in using a variable:
+
+          1. Introduce (create or “declare”) the variable
+          2. Give (“assign”) the variable a value
+          3. Use the variable to access the stored value
+
+
+                task main()
+                {                                                         Declaration
+                                                                          The variable is created by announcing its type,
+                  int speed;                                              followed by its name. Here, it is a variable
+                                                                          named speed that will store an integer.
+
+                    speed = 75;                                           Assignment
+                                                                          The variable is assigned a value. The variable
+                                                                          speed now contains the integer value 75.
+                    startMotor(port3,speed);
+                                                                          Use
+                    startMotor(port2,speed);                              The variable can now “stand in” for any value of the appropriate
+                    wait1(2.0);                                           type, and will act as if its stored value were in its place.
+                }                                                         Here, both startMotor commands expect integers for power
+                                                                          settings, so the int variable speed can stand in. The commands set
+                                                                          their respective motor powers to the value stored in speed, 75.
+
+
+
+          In the example above, the variable “speed” is used to store a number, and then retrieve
+          and use that value when it is called for later on. Specifically, it stores a number given by the
+          programmer, and retrieves it twice in the two different places that it is used, once for each of the
+          startMotor commands. This way both motors are set to the same value, but more interestingly,
+          you would only need to change one line of code to change both motor powers.
+
+                task main()
+                {
+                  int speed;
+
+                    speed = 50;                                           One line changed
+                                                                          The value assigned to speed is now 50 instead of 75.
+
+                    startMotor(port3,speed);
+                                                                          Changed without being changed
+                    startMotor(port2,speed);                              No change was made to the program here, but
+                    wait1(2.0);                                           because these lines use the value contained in the
+                                                                          variable, both lines now tell their motors to run at
+                }                                                         a power level of 50 instead of 75.
+
+
+          This example shows just one way in which variables can be used, as a convenience for
+          the programmer. With a robot, however, the ability to store sensor values (values that are
+          measured by the robot, rather than set by the programmer) adds invaluable new
+          capabilities. It gives the robot the ability to take measurements in one place and deliver them
+          in another, or even do its own calculations using stored values. The same basic rules are
+          followed, but the possibilities go far beyond just what you’ve seen so far!
+
+
+
+© Carnegie Mellon Robotics Academy / For use with VEX® Robotics Systems                                                            Variables • 1
+                                                                                                                        ROBOTC
+
+          Reference
+
+
+          Variables with Natural Language
+          Declaration Rules
+          In order to declare a variable, you must declare its type, followed by its name. Here are some
+          specifics about the rules governing each:
+
+          Rules for Variable Types
+          • You must choose a data type that is appropriate for the value you want to store
+
+          The following is a list of data types most commonly used in ROBOTC:
+
+                 Data Type                                   Description             Example Values            Code
+                                        Positive and negative whole numbers, as         -35, -1, 0,
+                    Integer                                                                                     int
+                                        well as zero.                                  33, 100, 345
+               Floating Point           Numeric values with decimal points (even     -.123, 0.56, 3.0,
+                                                                                                               float
+                  Decimal               if the decimal part is zero).                    1000.07
+                                        True or False. Useful for expressing the
+                   Boolean                                                              true, false            bool
+                                        outcomes of comparisons.
+                                        Individual characters, such as letters and
+                  Character                                                             ‘n’, ‘5’, ‘Z’          char
+                                        numbers, placed in single quotes.
+                                        Multiple characters in a row, can             “Hello World!”,
+                     String             optionally form sentences and words,          “asdf”, “Zebra          string
+                                        placed in double quotes.                       Number 56”
+
+          Rules for Variable Names                                          Proper Variable      Improper Variable
+          • A variable name can not have spaces in it                           Names                 Names
+
+          • A variable name can not have symbols in it                         linecounter              line counter
+          • A variable name can not start with a number                        threshold                threshold!
+                                                                               distance3                 3distance
+          • A variable name can not be the same as an
+            existing reserved word                                            timecounter                time1[T1]
+
+
+
+
+© Carnegie Mellon Robotics Academy / For use with VEX® Robotics Systems                                                Variables • 2
+                                                                                                                  ROBOTC
+
+          Reference
+
+
+          Variables with Natural Language
+          Assignment and Usage Rules
+          Assignment of values to variables is pretty straightforward, as is the use of a variable in a
+          command where you wish its value to be used.
+
+          Rules for Assignment
+          • Values are assigned using the assignment operator = (not ==)
+          • Assigning a value to a variable that already has a value in it will overwrite the old value
+            with the new one
+          • Math operators (+, -, *, /) can be used with assignment statements to perform calculations
+            on the values before storing them
+          • A variable can appear in both the left and right hand sides of an assignment statement;
+            this simply means that its current value will be used in calculating the new value
+          • Assignment can be done in the same line that a variable is declared
+            (e.g. int x = 0; will both create the variable x and put an initial value of 0 in it)
+
+          Rules for Variable Usage
+          • “Use” a variable simply by putting its name where you want its value to be used
+          • The current value of the variable will be used every time the variable appears
+
+         Examples:
+                                            Statement                                Description
+                                                                          Stores the value 75 in the variable
+                                    motorPower = 75;
+                                                                                    “motorPower”
+                                                                          Stores the current sensor reading
+            sonarVariable = SensorValue(sonarSensor);                     of the sensor “sonarSensor” in the
+                                                                               variable “sonarVariable”
+                                                                             Adds the value in “variable1”
+                                                                           to the value in “variable2”, and
+                         sum = variable1 + variable2;
+                                                                            stores the result in the variable
+                                                                                         “sum”
+                                                                             Adds the value in “variable1”
+                                                                             and the value in “variable2”,
+                 average = (variable1 + variable2)/2;                      then divides the result by 2, and
+                                                                           stores the final resulting value in
+                                                                                       “average”
+                                                                             Adds 1 to the current value of
+                                                                          “count” and places the result back
+                                  count = count + 1;
+                                                                           into “count” (effectively, increases
+                                                                               the value in “count” by 1)
+                                                                            Creates the variable x with an
+                                                                            initial value of 0 (combination
+                                       int zero = 0;
+                                                                             declaration and assignment
+                                                                                        statement)
+
+
+
+© Carnegie Mellon Robotics Academy / For use with VEX® Robotics Systems                                       Variables • 3
+

@@ -1,0 +1,49 @@
+--- slide1.xml
+R1 = 68.1k       R2 = 249k   
+R3 = 2.8k 
+R4 = 10k 
+R5 = 10k 
+R6 = 100k 
+R7 = 8.06k 
+R15 = 1k       R16 = 100   
+R17 = 2.8k 
+R18 = 2.8k 
+R19 = 2.8k 
+R20 = 2.8k 
+R8 = 5.11k       R9 = 82.5k   
+R10 = 10k 
+R11 = 10k 
+R12 = 10k 
+R13 = 10k 
+R14 = 10k 
+C1 = 10v 680 F     C2 = 10v 47 F
+C3 = 474, .47 F         C4 = 10v 47 F
+C7 =  102, 1 nF
+C8 = 103, .01 F
+C11 = 102, 1 nF
+C12 = 103, .01 F  
+C13 = 104, .1 F
+C14 = 104, .1 F
+C15 = 104, .1 F
+C16 = 104, .1 F
+C17 = 104, .1 F
+Q1 = 2N7000      Q2 = 2N7000  
+Q3 = 2N3906
+U1 = CD4051, 16-pin      U2 = CD4052, 16-pin  
+U3 = MC33204P, 14-pin
+U4 = CD4520, 16-pin 
+Resistors
+Capacitors
+Transistors
+LEDs
+Integrated Circuits
+Infrared Detectors
+Polarized (+,-)
+Non-Polarized
+8 – white color
+5 – red 
+        color
+Robot Project - The IR board
+ky
+Short lead
+Long lead

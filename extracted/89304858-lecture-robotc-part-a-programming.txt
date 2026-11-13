@@ -1,0 +1,335 @@
+--- slide1.xml
+Programing ConceptPart A
+Ken Youssefi/Ping Hsu
+Introduction to Engineering – E10
+1
+ENGR 10Introduction to Engineering
+--- slide2.xml
+Ken Youssefi/Ping Hsu
+Introduction to Engineering – E10
+2
+What is Computer Programming ?
+Programming is breaking a task into small steps
+As a computer programmer, your job is to instruct a computer to perform tasks
+One thing that you will realize quickly is that most computers are very dumb, but obedient.  It does exactly what you tell it to do, which is not always what you want.
+--- slide3.xml
+A Math Example
+Ken Youssefi/Ping Hsu
+Introduction to Engineering – E10
+3
+y = [ 3 × ( a × a + 7) ] / b + 4
+a2
+a2 + 7
+3 × (a2 + 7) = 3a2 + 21
+(3a2 + 21) / b
+(3a2 + 21) / b + 4
+--- slide4.xml
+Consider the sequential execution of the above expressions to find the value of y:
+Ken Youssefi/Ping Hsu
+Introduction to Engineering – E10
+4
+p = a x a;  (; indicates the end of the command) 
+q = p + 7;
+r = 3 x q;
+s = r / b;
+y = s + 4;
+y = [ 3 × ( a × a + 7) ] / b + 4
+--- slide5.xml
+Ken Youssefi/Ping Hsu
+Introduction to Engineering – E10
+5
+What is a Programming Language?
+Computers only understand the binary language. Programming languages were developed to make it easier for us to communicate with computers.
+There are many different languages. The main choices, used by professional programmers, are:  C, C++, Java and Python.
+Probably the most widely-used, it is the oldest of the four languages. It's been in use since the 70s, and is a very compact , powerful and well-understood language.
+C
+C++
+The prime purpose of C++ programming was to add object orientation to the C programming language. This language includes pretty much all of C with more features added. 
+--- slide6.xml
+Ken Youssefi/Ping Hsu
+Introduction to Engineering – E10
+6
+What is a Programming Language?
+Object Oriented Programming (OOP) is a programming model based on the idea of organizing code around objects rather than just functions and logic.
+An object is a self-contained unit that combines:
+Data (attributes / properties) — what the object has
+Behavior (methods / functions) — what the object can do
+A Car class might contain:
+   Properties: color, speed, model
+   Methods: start, stop, accelerate
+Example: A car
+   Car is the class
+   myCar is an object
+   color and speed are attributes
+   accelerate() and displaySpeed() are methods 
+Where
+--- slide7.xml
+Ken Youssefi/Ping Hsu
+Introduction to Engineering – E10
+7
+The four commonly associated principles of OOP are:
+  Encapsulation — keeping data and related methods  			          together	                           
+  Inheritance — creating a new class from an existing class
+  Polymorphism — allowing the same method name to 			           behave differently
+4.  Abstraction — hiding unnecessary implementation details
+Encapsulation -  The process of bundling the data and methods together as a single unit 
+--- slide8.xml
+Ken Youssefi/Ping Hsu
+Introduction to Engineering – E10
+8
+Abstraction - Objects in an OOP language provide an abstraction that hides the internal implementation details (hides complexity).
+Example – Any appliance (coffee maker). You need to know how to use your coffee machine to make coffee, provide water and coffee beans, switch it on and select the kind of coffee you want to get.
+What you don’t need to know is how the coffee machine is working internally to brew coffee, like the ideal temperature of the water or the amount of ground coffee you need to use.
+--- slide9.xml
+Ken Youssefi/Ping Hsu
+Introduction to Engineering – E10
+9
+   Smartphones — objects such as Phone, Camera, Contact, and  App
+   Robots — objects such as Motor, Sensor, Arm, and Battery
+   Cars — objects such as Engine, Wheel, Brake, and GPS
+   Washing machines — objects such as Motor, WaterSensor, Timer
+   Printers — objects such as InkCartridge, PaperTray, PrintJob, and
+                        Scanner
+   ATMs — objects such as Customer, Account, Transaction, and
+                   CardReader
+   VEX robots — objects such as Motor, Controller, Drivetrain, and
+                              Distance Sensor
+   Smart thermostats — objects such as TemperatureSensor, Fan, Heater,
+      and Schedule 
+Many modern devices use software written with Object-Oriented Programming (OOP). Examples include:
+--- slide10.xml
+Ken Youssefi/Ping Hsu
+Introduction to Engineering – E10
+10
+Compiler is a computer program (or set of instructions) that transforms source code written in a programming language (the source language) into another computer language (the target language, often having a binary form known as object code).
+Interpreter is a program that executes code line by line, translating it into machine-readable instructions as the program runs.
+Java programs are compiled into platform-independent bytecode that can run on different operating systems using a Java Virtual Machine. Historically, Java applets could run inside web browsers, but this technology is now obsolete. Java programs are executed by the JVM, which may interpret the bytecode and compile frequently used parts into machine code while the program is running.
+--- slide11.xml
+Ken Youssefi/Ping Hsu
+Introduction to Engineering – E10
+11
+Python
+A powerful general-purpose interpretive programming language. It is used in web development, data science, creating software prototypes, and so on. Python has simple easy-to-use syntax. This makes Python an excellent language to learn to program for beginners.
+C++ has more syntax rules and other programming conventions, while Python aims to imitate the regular English language. When it comes to their use cases, Python is the leading language for machine learning and data analysis, and 
+C++ is the best option for game development and large systems
+--- slide12.xml
+Ken Youssefi/Ping Hsu
+Introduction to Engineering – E10
+12
+Python is an interpreted (no compiler needed), object-oriented, high-level programming language 
+Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance
+Python programs are generally expected to run slower than Java programs but they take much less time to develop it.
+Python programs are 3-5 times shorter than Java’s and 5-10 times shorter than C++
+Very good code for prototyping
+Python
+--- slide13.xml
+Ken Youssefi/Ping Hsu
+Introduction to Engineering – E10
+13
+PYTHON vs C++
+Python is better for beginners in terms of its easy-to-read code and simple syntax. 
+Python is also a leading language for data analysis and machine learning. In terms of simplicity, Python is much easier to use and has a greater support system when it comes to AI and ML frameworks.
+this tutorial.
+C++ wins the race when it comes to game development. For sophisticated game development, C++ is an unstoppable leader.
+C++ is much faster than Python. Python is an interpreted language, and it cannot be a match for a compiled language such as C++.
+You can get the best of both worlds by combining C++ and Python code. Some speed-critical parts of your project can use C++ instead of Python.
+--- slide14.xml
+Ken Youssefi/Ping Hsu
+Introduction to Engineering – E10
+14
+Compiled Language
+(Source code)
+Interpreted Language
+(Source code)
+Compiler
+(Translates to Target Source)
+Interpreter
+(Interprets Source Code line by line into Machine Code)
+Executable File
+(Machine Code)
+Operating System
+(Windows, Mac OS, Linux)
+C, C++, ROBOTC (VEX)
+Java, Python (slower but more flexible)
+Compiled vs Interpreted Languages
+--- slide15.xml
+Ken Youssefi/Ping Hsu
+Introduction to Engineering – E10
+15
+Python is better for beginners in terms of its easy-to-read code and simple syntax. Additionally, Python is a good option for web development (back-end), while C++ is not very popular in web development of any kind.
+Python is also a leading language for data analysis and machine learning. While it is possible to use C++ for machine learning purposes as well, it is not a good option.
+In terms of simplicity, Python is much easier to use and has a great support system when it comes to AI and ML frameworks.
+this tutorial.
+C++ wins the race when it comes to game development. Python can create simple games that will help you understand the basic logic and steps of producing a game. However, for more sophisticated game development, C++ is an unstoppable leader.
+The performance of C++ and Python also comes to an end with this conclusion: C++ is much faster than Python. After all, Python is an interpreted language, and it cannot be a match for a compiled language such as C++.
+The good news is that you can get the best of both worlds by combining C++ and Python code. Therefore, some speed-critical parts of your project can use C++ instead of Python.
+--- slide16.xml
+Ken Youssefi/Ping Hsu
+Introduction to Engineering – E10
+16
+KEY DIFFERENCES – JAVA vs Python
+Java is a compiled+ interpreted Language whereas Python is an Interpreted Language
+Java is statically typed whereas Python is dynamically typed
+Java has a complex learning curve whereas Python is easy to learn and use
+Java is a multi-platform, object-oriented, and network-centric, programming language whereas Python is a high-level object-oriented programming language.
+Java takes 10 lines of code to read from a file while Python only needs 2 lines of code.
+Java program can run on any computer or mobile device which is able to run the Java virtual machine (JVM) while Python programs need an interpreter installed on the target machine to translate Python code. Compared to Java, Python is less portable.
+Java is best for Desktop GUI (Graphical User Interface) apps, Embed Systems, Web application services, whereas Python is excellent for scientific and numeric computing, Machine learning (ML) apps, more.
+--- slide17.xml
+Ken Youssefi/Ping Hsu
+Introduction to Engineering – E10
+17
+ROBOTC Cortex (VEX Robot)
+Over time, special purpose languages have been developed for specific applications - to make the programmer’s job easier. ROBOTC for VEX Robotics 4.x (VEX Cortex) is a C++ based language specifically for telling the VEX Cortex robot what to do.
+ROBOTC has a similar look and feel as the programming environments used in the computer science industries, but also includes many useful tools that help beginner programmers to get up and running as quickly as possible
+ROBOTC is a text-based programming language based on the standard C programming language. Commands to the robot are written as text on the screen, processed by the ROBOTC compiler into a machine language file, and then loaded onto the robot, where they can be run.
+--- slide18.xml
+Ken Youssefi/Ping Hsu
+Introduction to Engineering – E10
+18
+C++ is a programming language that was evolved from C. 
+RobotC is a language and API (Application Programming Interface), an API is just bunch of code and libraries in layman’s terms) based on C. It was developed specifically for programming robotics. RobotC is still based on the C language just like C++. RobotC extended some of C’s features, just like C++
+RobotC’s biggest advantage versus other robotics programming languages (at the hobbyist/entry-level) is that it is the only tool available with a real-time debugger. There are other, much more expensive, embedded programming systems (languages, libraries, compilers, etc) that provide a real-time debugger, but those tools are targeted specifically at the professional market.
+The best thing about robotC is that anyone can download and start programming
+Summary
+--- slide19.xml
+Features
+Python
+C++
+ROBOTC
+Ken Youssefi/Ping Hsu
+Introduction to Engineering – E10
+19
+Summary
+--- slide20.xml
+https://www.vexrobotics.com/
+https://www.vexrobotics.com/customer/account/create/
+Installing ROBOTC
+Note: Robot C is not installed in the 391/393 labs
+--- slide21.xml
+NOTE: Either create a VEX account or sign into your existing account.
+Go to VEX’s customer account login page
+--- slide22.xml
+https://kb.vex.com/hc/en-us/articles/49132545363348-Accessing-ROBOTC-for-VEX-Cortex-and-VEX-IQ-1st-gen
+Select and run the EXE file
+Go to the following link to download the ROBOTC program
+Ken Youssefi
+22
+E10
+--- slide23.xml
+Click the “Next” button when the Setup Wizard window pops up.
+Skip to Step 4 if running the installer. If the installer was downloaded, continue here. 
+Locate the ROBOTCforVEX installation file in the Downloads folder or in the alternative location where the file was saved.
+Double click to start the installation.
+--- slide24.xml
+Change where the file will be saved to the preferred destination folder and click Next
+Click to accept the terms.
+Click Next to continue
+--- slide25.xml
+Click Install to begin the installation process.
+Select the Complete setup and click Next.
+--- slide26.xml
+Click Install on any prompts that ask to confirm the installation of VEX Robotics Ports.
+--- slide27.xml
+Click Finish to close the Install Shield Wizard
+Click Install to allow VEX Robotics Inc. to install device software
+--- slide28.xml
+ROBOTC should be included within the list of programs available and two shortcut icons should be visible on the desktop. One shortcut is for Graphical ROBOTC which is a block-based programming language (not used for E10) whereas the other shortcut is for the text-based ROBOTC programming language
+We use ROBOTC text-based programming for E10
+--- slide29.xml
+Hsu/Youssefi
+29
+ROBOT C – text base program
+Open a new file
+Double click to open the ROBOTC 4.0
+--- slide30.xml
+Hsu/Youssefi
+30
+Your program goes between the curly brackets
+The program has to be compiled and then downloaded to the controller
+compiler errors appear in the status section here, indicating the problem line
+--- slide31.xml
+Hsu/Youssefi
+31
+Different colors used in ROBOT C program
+--- slide32.xml
+Hsu/Youssefi
+32
+Text Functions
+--- slide33.xml
+Hsu/Youssefi
+33
+Natural Language
+--- slide34.xml
+Variables
+Ken Youssefi/Ping Hsu
+Introduction to Engineering – E10
+34
+Every variable in the program needs to be declared in the beginning of the program.
+Declaration of the variable tells the program its type and name followed by semicolon
+ int    speed ;
+The word ″int″ indicates that the variable ″speed″ is an integer variable.
+Variables are an essential part of computer programs. They allow the computer to store the value of things. Think of variables as containers that hold information. They also provide a way of labeling data with a descriptive name
+--- slide35.xml
+Variables
+Ken Youssefi/Ping Hsu
+Introduction to Engineering – E10
+35
+A semicolon is required at the end of each  instruction.  
+A “variable” is a place where we store a value that changes.
+ A = 10 ; // The value 10 is stored in A.
+Any statement after the sign “//” is NOT part of the program.  It is a comment made by the programmer.
+Value of 10 is placed in the storage location called “A”. So “A” is a variable
+--- slide36.xml
+Assignment Operator
+Ken Youssefi/Ping Hsu
+Introduction to Engineering – E10
+36
+In C language “ = ” is an assignment operator, NOT an “ is equal to ” statement.
+A = A+1; //means assign the value A+1
+ 			 // back to A, i.e., increase A by 1.
+A = 10;   // means assign 10 to A.
+A = B;  //  means assign the value of B to A
+This == symbol is used for checking ‘equal’ condition, not for value assignment.
+--- slide37.xml
+Assignment Operator: Examples:
+Ken Youssefi/Ping Hsu
+Introduction to Engineering – E10
+37
+int A; // a variable named A of type integer
+int B; // a variable named B of type integer
+A = 10; // value 10 is assigned to variable A
+B = (24+16)/2; // 20 is assigned to variable B
+A = A + 15; // value of (A+15) is first evaluated
+                         and then assigned to A.
+                         So now A=(10+15)=25
+B = A + B ; 
+A = B – 40; // Now A=(45-40)=5, B=45
+A = A * B; // Now A=(5*45)=225, B=45
+B = A / 9; // Now A=225, B=25
+// Now A = 25, B = (25+20)=45
+--- slide38.xml
+Ken Youssefi/Ping Hsu
+Introduction to Engineering – E10
+38
+Variables
+In order to declare a variable, you must declare its type, followed by its name.
+--- slide39.xml
+Ken Youssefi/Ping Hsu
+Introduction to Engineering – E10
+39
+--- slide40.xml
+Ken Youssefi/Ping Hsu
+Introduction to Engineering – E10
+40
+Creating variable in ROBOTC
+Variable Name
+Variable Type
+--- slide41.xml
+Ken Youssefi/Ping Hsu
+Introduction to Engineering – E10
+41
+Declaring variables example (2 min)
+https://www.youtube.com/watch?v=hbzaLt4WgR8
+https://www.youtube.com/watch?v=hbzaLt4WgR8
+https://www.youtube.com/watch?v=hbzaLt4WgR8

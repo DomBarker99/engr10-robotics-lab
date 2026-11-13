@@ -1,0 +1,492 @@
+--- slide1.xml
+Programming Concepts(Part B)Mechanical ComponentsENGR 10Introduction to Engineering
+1
+Ken Youssefi
+Introduction to Engineering – E10
+--- slide2.xml
+Decision Making
+Ken Youssefi
+Introduction to Engineering – E10
+2
+A linear (sequential) execution of instructions can only perform a simple task that does not involve decision making.
+Most common control structures are:
+IF - used for one condition
+IF - Else used for 2 conditions
+While statement (Do Loop)
+The ability to make decision is the most basic form of intelligence.
+--- slide3.xml
+IF Statement (logic statement, one case only)
+Ken Youssefi
+Introduction to Engineering – E10
+3
+if (Number == 0)         
+    {
+    DisplayCenteredTextLine (1, “The Number is Zero”);
+    }
+if (Number < 0)
+    {
+    DisplaycenteredTextLine (1, “The Number is negative”);
+    }
+Example
+Only if this condition is true, this instruction is executed.
+--- slide4.xml
+IF-ELSE Statement
+Ken Youssefi
+Introduction to Engineering – E10
+4
+IF-ELSE statement should be used where there are only two possible cases.  
+If (score <60)
+	{  DisplayCenteredTextLine(1,″You failed the test″;}
+   Else
+	{  DisplayCenteredTextLine(1, ″You passed the test”);}
+--- slide5.xml
+Ken Youssefi
+Introduction to Engineering – E10
+5
+ROBOTC – IF and IF-Else control structures
+--- slide6.xml
+Ken Youssefi
+Introduction to Engineering – E10
+6
+https://www.youtube.com/watch?v=4fq0heDsfQs&t=8s
+If – else example (4 min.)
+--- slide7.xml
+Ken Youssefi
+Introduction to Engineering – E10
+7
+ROBOTC – while control structures
+--- slide8.xml
+Ken Youssefi
+Introduction to Engineering – E10
+8
+https://www.youtube.com/watch?v=Uv6acG1_yMQ
+while example (3.50 min.)
+--- slide9.xml
+Functions (subprogram)
+What is a function?
+Function is just a group of code given a name. By grouping and naming it we can reuse it any where in the application without having to rewrite the whole block of code again.
+It saves time and reduces the overall code size of your program. But more importantly, if there is a problem you only have to fix it in one place.
+Why use a function?
+9
+Ken Youssefi
+Introduction to Engineering – E10
+--- slide10.xml
+Ken Youssefi
+Introduction to Engineering – E10
+10
+ROBOTC – Creating Functions (subprogram)
+Declare function by using the word Void followed by the name you assign to the function. The name should reflect the task that function should perform. Create subprogram before the main task program. Include () after the name. To run the program in the task main, call it by name 
+A function is a group of statements that are run as a single unit when the function is called from another location, such as task main().
+--- slide11.xml
+Ken Youssefi
+Introduction to Engineering – E10
+11
+https://www.youtube.com/watch?v=6DsmZ_qN-7c&t=19s
+Void command example (2 min.)
+--- slide12.xml
+Ken Youssefi
+12
+Quiz 15
+Q1 - What are the values of X and Y at end of this program?
+Q2 – Using function in programming reduces the overall code size, True or False?
+A) True
+B) False 
+X = 10 ;
+Y = 12 ; 
+if ((X + Y) < 22)
+     {  Y = X ;
+         X = Y;    }
+else 
+      {  X = Y;
+       Y = X + Y; }
+A)   X=12, Y=22
+B)   X=12, Y=10
+C)   X=10, Y=10
+D)   X=12, Y=24
+E)    X=10, Y=22
+Code
+Answer
+Introduction to Engineering – E10
+--- slide13.xml
+Ken Youssefi
+13
+ROBOTC – text base program
+Open a new file
+Introduction to Engineering – E10
+--- slide14.xml
+Ken Youssefi
+14
+Your program goes between the curly brackets
+The program has to be compiled and then downloaded to the controller
+compiler errors appear in the status section here, indicating the problem line
+Introduction to Engineering – E10
+--- slide15.xml
+Ken Youssefi
+15
+Text Functions
+Introduction to Engineering – E10
+--- slide16.xml
+Ken Youssefi
+16
+Natural Language (NL)
+PLTW
+Introduction to Engineering – E10
+--- slide17.xml
+Ken Youssefi
+17
+Motors and Sensors Setup
+No need to select Configuration
+Introduction to Engineering – E10
+--- slide18.xml
+Ken Youssefi
+18
+Controller (Cortex)
+Motor and Servo ports
+8 analog and 12 digital ports. Digital ports are used for Limit, Bumper and Ultrasonic  sensors
+(Robot’s brain)
+Introduction to Engineering – E10
+--- slide19.xml
+Ken Youssefi
+19
+Back view of the VEX Controller
+Battery Ports (Square and round connectors)
+On-off switch
+Disconnect the battery by holding the white plastic connector NOT the wires
+Introduction to Engineering – E10
+--- slide20.xml
+Ken Youssefi
+20
+Motors Setup
+Motor ports
+Select motor type (VEX 393)
+Select the port that the motor is connected to
+Introduction to Engineering – E10
+--- slide21.xml
+Ken Youssefi
+Introduction to Engineering – E10
+21
+Natural Language PLTW
+Natural Language 2.0
+Three different platforms (methods) of writing the same program
+C++ language
+NL 2.0 and NL PLTW can be mixed with C++ but not with each other
+X
+--- slide22.xml
+Ken Youssefi
+22
+https://www.youtube.com/watch?v=mgCN7OW0_qk&t=190s
+Programming Sensors (12 min.), using Natural language - Until 
+Motor setup
+By Kamran Zarea
+ROBOTC Natural Language (PLTW)
+startMotor (port8, 63)
+Port number
+Speed (ccw), -63 (cw)
+Introduction to Engineering – E10
+--- slide23.xml
+Ken Youssefi
+23
+https://www.youtube.com/watch?v=nu4DvUP_gfc
+Programming Motor Movement (12 min.) 
+By Kamran Zarea
+ROBOTC Natural Language (PLTW)
+Introduction to Engineering – E10
+--- slide24.xml
+Ken Youssefi
+24
+Program to make the right and left motors move forward for 2 seconds and then stop using
+Use Motor Set up to configure the right and left motors. #pragma will be generated automatically by ROBOTC.
+ Natural Language (PLTW)
+Introduction to Engineering – E10
+--- slide25.xml
+Ken Youssefi
+25
+Program to make the motor move forward for 2 seconds and then stop, alternate method (C++ code, NL PLTW)
+Introduction to Engineering – E10
+NL (PLTW)
+--- slide26.xml
+Ken Youssefi
+Introduction to Engineering – E10
+26
+Use Motor and Sensor Setup to configure motor
+Program to make the motor move at highest speed (127) for 10 sec., stop for 10 sec., then start at half speed for 20 sec. and then stop, in C++ code
+--- slide27.xml
+Ken Youssefi
+27
+Sensor Setup
+Analog 
+Introduction to Engineering – E10
+--- slide28.xml
+Ken Youssefi
+28
+Digital 
+Sensor Setup
+Sensors used for our robot are: 
+Touch (limit and bumper switch), could use Digital In
+Sonar (ultrasonic)
+Introduction to Engineering – E10
+--- slide29.xml
+Ken Youssefi
+29
+Connections between the IRB and the controller
+IRB
+J1 and J2 connectors
+Introduction to Engineering – E10
+Port 1 (Analog)
+Ports 9, 10, 11, 12 and SP (Digital)
+--- slide30.xml
+Mechanical Components – Motors
+Motor, continuous rotation of the shaft (3 wires – old model)
+Clutch
+The clutch module is used to prevent damage to the motor in case of large torque (resistance to motion), mechanical fuse.
+Motor
+(Continuous)
+30
+Ken Youssefi
+Servo
+Servo, shaft rotates through a specified angle (3 wire)
+Introduction to Engineering – E10
+--- slide31.xml
+Ken Youssefi
+31
+Mechanical Components – Motor (New 393)
+The newer motor has two wires (2-wire motors). It can be converted to a 3-wire motor using the controller 29. Ports 1 and 10 on the controller are designated for 2-wire motors only. 
+2 pins
+3 pins
+Port 1
+Port 10
+Introduction to Engineering – E10
+--- slide32.xml
+Ken Youssefi
+32
+Cortex
+Two 3-Wire motors to operate the claw and the arm (3-pin)
+Two continuous motors to drive the robot (2-pin)
+3 pins
+Introduction to Engineering – E10
+--- slide33.xml
+Motor assembly
+Ken Youssefi
+33
+Clutch assembly
+Transmission
+Motor
+Gears in the transmission (plastic or metal)
+Long and short mounting screws
+Introduction to Engineering – E10
+--- slide34.xml
+Ken Youssefi
+34
+VEX gears and SquareBot
+36-tooth gears meshed with 60-tooth and attached to the wheels
+60-tooth gears attached to motor
+Motor
+Introduction to Engineering – E10
+--- slide35.xml
+Ken Youssefi
+35
+Speed and torque relationship between two gears meshing
+Power = torque x rotational speed = constant for a given motor
+Speed 
+Torque 
+N1/N2 = D1/D2 = ꞷ2/ꞷ1 = T1/T2  
+Relationship between the number of teeth, rotational speeds, diameters and torques
+ = Gear Ratio 
+N1 =12
+N2 =12
+Motor
+Wheel
+N1 =12
+N2 =36
+Motor
+Wheel
+N2 =12
+N1 =36
+Motor
+Wheel
+P= (T)(ꞷ)        ꞷ2/ꞷ1 = T1/T2 
+Introduction to Engineering – E10
+--- slide36.xml
+Ken Youssefi
+36
+The SquareBot
+Set screw
+Shaft Collars lock to drive shafts, keeping wheels and gears from sliding along the shaft. Collars fit around Drive Shafts and can be fastened in place using a set screw. Do not take the set screws completely out
+Introduction to Engineering – E10
+--- slide37.xml
+127    max. speed counter clockwise (CCW) direction
+Continuous Motor (speeds)
+37
+Ken Youssefi
+-127    max. speed clockwise (CW) direction
+0      no movement (zero speed)
+Servo (angle of shaft rotation)
+Servo units are similar to motors except that they control position (rotation of the motor shaft in degrees) rather than speed.
+Servo units have limited range of motion (about 120o)
+A value between (-127) and (127) sets the direction of the servo.
+Introduction to Engineering – E10
+--- slide38.xml
+Servo
+Similar to the motor the following statement is used to set the servo to turn to a direction.
+                     setServo ( port5 , 64 );
+Indicates the motor port number to which the servo is connected.
+This value sets the 
+direction and the rotation of the servo
+38
+Ken Youssefi
+Introduction to Engineering – E10
+--- slide39.xml
+0
+-127
+127
+0o
+600
+-60o
+clockwise 
+ Counter-clockwise
+-30o
+64
+Motor shaft rotates 30o clockwise and then stops
+39
+Ken Youssefi
+Introduction to Engineering – E10
+--- slide40.xml
+Ken Youssefi
+40
+Program showing how to move the servo continuously (NL PLTW)
+Introduction to Engineering – E10
+--- slide41.xml
+Ken Youssefi
+41
+Program showing how to move the servo continuously, alternative method (C++)
+NL PLTW
+Introduction to Engineering – E10
+--- slide42.xml
+0
+-127
+127
+0o
+60o
+- 60o
+clockwise 
+ Counter-clockwise
+Output of the above program
+-30o
+-64
+30o
+64
+42
+Ken Youssefi
+Introduction to Engineering – E10
+--- slide43.xml
+Ken Youssefi
+43
+Arm design – use a servo or a continues motor operating for a certain time to obtain a desired arm movement (rotation)
+Raise the arm at the start to make sure it is not blocking the IRB
+Lower the arm slowly to hit the red button gently.
+Introduction to Engineering – E10
+--- slide44.xml
+Mechanical Components - Sensors
+44
+Ken Youssefi
+Ultrasonic  Sensor (Digital) 
+Bumper Switch Sensor (Digital)
+Limit Switch Sensor (Digital) 
+Introduction to Engineering – E10
+--- slide45.xml
+Introduction to Logic Signals
+A logic signal can take on either 0 volt or 5 volt
+ 0v represents “Low state” or “Logic 0”
+ 5v represents “High state” or “Logic 1”
+A logic signal can also be called a “digital signal”
+45
+Ken Youssefi
+Introduction to Engineering – E10
+--- slide46.xml
+Bumper/Limit Switch
+When the switch is not pressed, the robot interprets this value as a 0 (low state). 
+When the switch is pressed the robot interprets the value as a 1 (high state).
+46
+Ken Youssefi
+A Bumper/Limit Switch is a digital sensor. 
+It can distinguish between two states: pressed or not pressed (On or Off)
+Introduction to Engineering – E10
+Using Touch sensor
+Note: If you use Digital In Sensor instead of Touch option, the logic is reversed. When the switch is not pressed, the robot interprets this value as a 1, and 0 if the sensor is pressed 
+--- slide47.xml
+Ken Youssefi
+47
+https://www.youtube.com/watch?v=mgCN7OW0_qk&t=190s
+Programming Sensors (12 min.), using Natural language - Until 
+Touch Sensors
+By Kamran Zarea
+ROBOTC Natural Language (PLTW)
+startMotor (port8, 63)
+Port number
+Speed (ccw), -63 (cw)
+Introduction to Engineering – E10
+--- slide48.xml
+stores the state of the Touch sensor into the variable “touchSensor”
+checks if there is a contact with an obstacle (switch will be pressed if there is a contact)
+Robot moves forward as long as there is no obstacle (touch sensor  ==0)
+if the switch is pressed (touchSensor==1), the robot stops for 1 second
+Then the robot turns left for 2 seconds
+Program to make the robot stop and turn for 2 seconds when it hits an obstacle (using Touch sensor), use NL PLTW
+48
+Ken Youssefi
+Introduction to Engineering – E10
+--- slide49.xml
+Ken Youssefi
+Introduction to Engineering – E10
+49
+Same as previous slide but using Digital In as sensor and C++
+--- slide50.xml
+Ultrasonic Sensor
+The measurement is translated into a numeric value from 0 to 255 inches.
+Lower signal value corresponds to a closer detected object and vice versa.
+50
+Ken Youssefi
+The Ultrasonic Sensor is a digital sensor.
+The Ultrasonic Sensor uses high-frequency sound waves to detect objects. 
+It emits a sound wave, measures how long it takes the sound wave to bounce back, and then calculates how far away the object is.
+Introduction to Engineering – E10
+--- slide51.xml
+The Vex Ultrasonic Sensor
+INPUT
+Sends ultrasonic wave
+Connect to digital output of the controller
+OUTPUT
+Receives the echo
+Connect to the input of the controller
+51
+Sonar sensors
+Ken Youssefi
+Introduction to Engineering – E10
+51
+--- slide52.xml
+Ultrasonic Sensor
+Sensor connects through adjacent digital ports
+ INPUT connects to the lower numbered port (5)
+ OUTPUT connects to the higher numbered port (6)
+52
+Ken Youssefi
+Units for measurement configured with Motors and Sensors Setup; Range is from 0 to 225 inches (regardless of set units)
+Introduction to Engineering – E10
+--- slide53.xml
+Ken Youssefi
+53
+Code for ultrasonic
+Program to make the robot drive forward until an obstacle is detected close to the robot
+Checking if the obstacle is near or far
+Assigning the variable into which the translated value is stored
+Introduction to Engineering – E10
+--- slide54.xml
+Accessing Sample Programs
+Ken Youssefi
+54
+Introduction to Engineering – E10
+--- slide55.xml
+Accessing Additional Resources
+Ken Youssefi
+55
+Introduction to Engineering – E10

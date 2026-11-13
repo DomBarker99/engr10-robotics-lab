@@ -1,0 +1,34 @@
+ENGR 10 – Robot Project
+Week 1 Programming Tasks
+
+
+4.1.1 VEX Controller Initialization (Week #1):
+Download the ROBOT C program, download the Firmware and configure the program. The instructions are in the Modules of the lab Canvas in the Robot and ROBOT C section. 
+
+
+4.1.3 Write Three Practice Programs (Week #1):
+Practice program 1:    Write a program that gradually increases the speed of the motor.  The speed of the motor should go from 0 to the maximum speed within about 10 seconds.  
+
+Practice program 2:    Write a program that gradually increases the speed of the motor, and after it reaches the maximum speed, gradually reduces the speed and reverses the speed until the speed reaches the reverse maximum speed.  After the motor reaches the reverse maximum speed, the speed should once again increase.   In other words, your program should make the motor speed swing between the forward maximum and the reverse maximum speeds.
+
+Practice program 3:  Write a program that makes the motor spin until the bumper switch (plugged it into port 1 of the Digital ports) is pressed.  When the bumper is released, the motor starts spinning again but in the reverse direction.  When the bumper switch is pushed again, the motor stops, and so on.
+
+4.1.4 Check that motors are working (Week #1):
+
+Hook up each motor and servo to the controller
+Write a short program to turn the motors back and forth and to move the servo a specified number of degrees.
+Download to the controller and test that the motors and servo are working properly.  If they don’t turn, talk to your lab instructor.
+This will save you from having to take apart your robot later when you find out your motors don’t work.
+
+
+
+
+
+
+
+
+ PAGE   \* MERGEFORMAT 1
+
+
+
+

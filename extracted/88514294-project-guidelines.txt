@@ -1,0 +1,435 @@
+Robot Project Guidelines
+
+Table of Contents
+	•	Project Objectives 	1
+	•	Project Description 	…  2
+	•	Project Grading 	 2
+	•	Project Tasks and Timeline 	 3
+	•	Programming Tasks 	 3
+	•	VEX Controller Initialization 	3
+	•	Write Your First Program 	4
+	•	Write Three Practice Programs 	4
+	•	Load and Test GOTO_BEACON 	4
+	•	Mechanical Design and Construction Tasks 	4
+	•	Sensors and Motors 	4
+	•	Electronics Tasks 	4
+	•	Tasks for Weeks #3 and #4 	4
+	•	Infrared Receiver Board (IRB) Fabrication 	5
+	•	Practice Soldering 	5
+	•	Resistors 	6
+	•	Capacitors 	7
+	•	Sockets for Integrated Circuits 	7
+	•	Light Emitting Diodes (LED) 	8
+	•	Transistors 	8
+	•	Connectors 	9
+	•	Infrared Detectors 	9
+	•	Fuse 	10
+	•	Final Inspection	10
+	•	IRB Theory of Operation 	10
+	•	Tuning Circuit 	10
+	•	Exposure Control 	11
+	•	Counter and Selector 	11
+	•	Amplifier 	11
+	•	Indicator LEDs 	12
+	•	Cable Connection between VEX controller and IRB 	12
+	•	LED Test Programs 	13
+	•	System Development Considerations 	14
+	•	Ultrasonic Sensor 	14
+	•	Bumper Switch and Limit Switch 	14
+	•	Optical Encoder 	14
+	•	Issues with the Frequency Select Function 	14
+	•	VEX Controller Analog/Digital Ports 	14
+
+	•	Project Objectives
+	•	Learn fundamentals of computer programming
+	•	Design and build a system to complete specified tasks
+	•	Build and program a circuit board
+	•	Successfully work as a team to execute a complex project
+	•	Develop organized oral and written presentations to convey the project design and outcomes
+
+
+
+	•	Project Description
+Figure 1: Car-O-Bot (source: Fraunhofer)
+Figure 1: Car-O-Bot (source: Fraunhofer)
+In this scenario, the robot is helping someone make dinner.  The timer goes off and the robot has to turn the stove off so that the food doesn’t burn and then get a plate for the person so that she can set her place at the table (The robot will go back later and bring the food). Your objective in this project is to design an autonomous robot that is capable of turning off a stove, and then bringing a plate to the person in another room. 
+
+In our lab, the stove and the plate are simulated by two infrared emitting beacons - a red one representing the stove and a green one the plate.  Your robot’s task is to shut down the red beacon, and move the green one across the starting line.  Figure 2 shows the specifications for the placement of the beacons and the robot in the arena used for this scenario.
+
+
+Figure 2		The arena of the robot project. The robot must enter the arena, find and turn off the red IR beacon, and move the green IR beacon out of the arena beyond the starting line.
+
+Each beacon used in this lab is a battery or electric powered infrared emitter (see Figure 3).  The beacons can be turned off by pressing down on the push-button switch located on top.    
+
+
+Figure 3	Infrared beacon. The infrared emitting beacon can be turned off by pushing down on the push-button switch on the top of the beacon. 
+
+	•	Project Grading 
+Robot Performance (80 points)
+	•	Task 1 – (25 points) Full credit, 25 points, for locating the red beacon and stopping the robot successfully and 15 points for failing. 
+	•	Task 2 – (20 points) Successfully turning off the red beacon, this includes a successful arm design. Full credit for turning it off and 15 points for the arm operating but failing to turn off the beacon. 10 points if the arm fails to operate at all.
+	•	Task 3 – (10 points) Successfully locating the green beacon; 5 points if wanders around but cannot find green beacon
+	•	Task 4 – (10 points) Carrying or pushing the green beacon out of the arena which includes using bumper and limit switches to avoid obstacles.
+	•	Robot Weight – (10 points) Minimizing the weight of the robot; 10 points for 2.0 Kg or less, 8 points for 2.0 to 2.25 Kg range, 6 points for 2.25 to 2.75 range and 5 points for over 2.75 Kg. 
+	•	Creativity and Simplicity – (5 points) How creative and effective is the main robot body and the arm design
+	•	Each team has a maximum of three runs, with the best run used for scoring.
+	•	5 bonus points for finishing all tasks the fastest, and 5 bonus points for the lightest robot.
+Report and Presentation (80 points)
+	•	(55 pts.) Report on the design and its performance You need to document your design decisions and process, along with performance results in a written report. Your report will be assessed on the quality and completeness of your documentation and on inclusion of a short essay on designing robots for audiences across the lifespan. See Separate Robot Report Project Guidelines posted on E10 web site.
+	•	(25 pts.) Presentation on the design and its performance You will make a 10-15 minute presentation describing your design and the results of its performance. 
+
+	•	Project Tasks and Timeline
+This project involves three types of tasks:  programming, mechanical design, and electronics.  The following is a guideline for how to divide up the work and weekly milestones that should be accomplished to successfully complete the project.
+
+4.1 Programming Tasks
+
+4.1.1 upgrade the Controller’s firm ware (see Lab Canvas for instruction) 
+
+4.1.2 Get familiar with ROBOTC software
+
+4.1.3 Write your first program (Week #1):
+See Week1 programming tasks posted in lab Canvas
+
+
+4.1.4 Write Three Practice Programs (Week #1):
+See Week1 programming tasks posted in Canvas
+
+4.1.5 Load and Test GOTO_BEACON (Week #2)
+Your team members should have completed the robot chassis (SquareBot) and the Infrared Receiver board by the end of Week #1.  By the end of Week #2, your robot should be able to find and move to a beacon by running the sample program GOTO_BEACON (see file posted in E10 lab Canvas). 
+
+Also, you should determine if any additional sensors and motors are required for the ‘search and rescue’ task, and design a high level logic flow of your control program. 
+
+4.2 Mechanical Design and Construction Tasks
+
+Week #1:    Follow the instruction given in the VEX manual to construct the SquareBot or your design.  We will not use the remote control for this project, so there is no need to install the receiver module. You are welcome to deviate from the manual and design your own chassis. 
+
+Week #2:   Design and construct the mechanism for turning the red beacon off and for moving the green beacon outside the arena.  You need to understand how the servo module works in order to do this or use continuous motor with timing. Information on the servo module is found in the VEX manual and lecture notes. You may need to decide the best place and way to mount additional sensors (bumpers and limit swithes and ultrasonic sensor).
+
+4.2.1 Sensors and Motors
+You will build the robot using the standard parts that come with the VEX robotic kit.  The following sensors, motor and servo modules are available for your design:
+	•	Ultrasound sensor
+	•	Optical Encoder
+	•	Bumper switch
+	•	Limit switch
+Not all of these devices are necessary for the task.  The usage of these parts can be found in the VEX component documentation (hard copies in the lab) (vexrobotics.com). If you want to use any other sensors or parts that are not included in the basic kit, you will need to request the additional parts from the lab instructor. 
+
+4.3 Electronics Tasks
+
+Week #1:   Construct the Infrared Receiver (IR) Board (see the following section). Test the functionality of the IRB after finishing the construction. 
+
+Week #2:   Finish the construction of the IRB if you have not done it during the first week. After you have completed the circuit board you should join the programming or the mechanical design team.  There is no more electronic work after the IR board is done. 
+
+4.4 Tasks for Weeks #3 and #4
+All three groups (Programming, Mechanical, Electronics) should work as a team to fine tune your program and improve your robot performance. The goal is to complete the required tasks by the end of the 4th week. 
+
+5.  Infrared Receiver Board (IRB) Fabrication
+READ THIS SECTION CAREFULLY.  A MISTAKE CAN COST YOUR TEAM DEARLY!!
+The infrared receiver board (IRB) is the ‘eyes’ of your robot.  There are eight forward pointing infrared detectors separated by about 15° between two adjacent detectors.  Collectively, these detectors cover a field of view of about 100°.  The intensity of light reaching the detectors can be read individually by the VEX controller.  From the relative intensity of the light detected, your program can tell the correct heading direction for moving toward the infrared light source.    
+5.1 Practice Soldering
+Before you solder the components to the IRB, you need to demonstrate that you can solder properly. 
+	•	First, view the video on how to solder 
+	•	Read the directions in resource file on the E10 website Robot Lab on how to solder.  
+	•	Work on soldering using the practice board
+	•	After you are done, show the board to your lab instructor.  If your soldering work is satisfactory, your instructor will give you the actual blank IRB and a bag of electronic components 
+Figure 5 shows the component locations on the board.  Figure 6 shows the completed IRB
+
+Figure 5	Component layout diagram of the Infrared Receiver Board (IRB). Note that some of the components are polarized, which means that the orientation of their leads cannot be interchanged. Make sure that you follow the assembly instructions carefully, and pay attention to which components are polarized. Note the orientation of the sockets, U1, U2, U3, and U4 as indicated by the small slot at one end.
+
+
+Figure 6	Completed Infrared Receiver Board (IRB). Pay close attention to the orientation of the chips that plugged into the sockets. 
+
+5.2 Resistors
+Table 1 shows the resistor ID numbers, resistance values, and the markings on the resistors.  The marking ‘1%’ means that the actual resistance is within 1% of the marked value.  Resistors do not have polarity, so you may place them in either orientation on the circuit board.  Before you insert the resistor leads into the holes, make sharp bends so that the resistor leads align with the holes as shown in Figure 7. 
+
+
+
+
+Figure 7  Resistor preparation for insertion. Before placing a resistor on the board, bend the resistor leads as shown.
+
+Table 1 Resistor ID and values.
+Component ID
+Value
+Marking
+R15
+1k Ω
+1k 1%
+R4,5,10,11,12,13,14
+10k Ω
+10k 1%
+R6
+100k Ω
+100k 1%
+R16
+100Ω
+100Ω 1%
+R3, 17,18,19,20
+2.8k Ω
+2.8k 1%
+R2
+249k Ω
+249k 1%
+R8
+5.11k Ω
+5.11k 1%
+R1
+68.1k Ω
+68.1k 1%
+R7
+8.06k Ω
+8.06k 1%
+R9
+82.5k Ω
+82.5k 1%
+
+After you have completed soldering the resistors, before you go on to the next component, show the board to your instructor for inspection.
+
+5.3 Capacitors
+A capacitor behaves like a tiny rechargeable battery.  It stores energy and releases it later.  Capacitors are used for many purposes in a circuit: filtering, tuning, separating signals, etc.  The unit of capacitance is the Farad.   Commonly used capacitances are much smaller than 1 Farad, and are in the range of micro-Farads (10-6 Farad, μF), nano-Farads (10-9 Farad, nF), or even pico-Farads  (10-12 Farad, pF).  
+
+Unlike resistors, some capacitors are polarized, which means that they have a + lead and - lead.  It is important that you place a polarized capacitor according to the polarity shown on the circuit board.  On the circuit board, the positive lead is indicated by a ‘+’ sign and/or by a square solder pad. Figure 8 shows ways to identify the polarity of a polarized capacitor and typical shapes of non-polarized capacitors.  Table 2 shows the capacitor ID numbers, capacitances, and markings on the capacitors.  
+
+
+Figure 8. Polarity of a polarized capacitor and typical shapes of non-polarized capacitors.  
+
+Table 2 Capacitor ID numbers, capacitances, and markings on the capacitors.
+Component ID
+Value
+marking
+Remark
+C2, 4
+47μF
+47μF 10v
+polarized
+C1
+680uF
+10v 480μF
+polarized
+C7, C11
+1nF
+102
+Not polarized
+C8, C12
+.01μF
+103
+Not polarized
+C13, 14, 15, 16, 17
+0.1μF
+104
+Not polarized
+C3
+0.47μF
+474
+Not polarized
+
+5.4 Sockets for Integrated Circuits 
+There are two types of sockets for the IRB: 16-pin type and 14-pin type.  These types of socket are called ‘Dual In-Line Package’ type (DIP).  Note that while the socket can be placed on the board in either orientation, it is a good practice to place it according to the pattern on the circuit board.  Figure 9 shows the orientation of the marking on the circuit board and the orientation of the socket.  Table 3 shows the socket ID numbers and type.
+
+To keep the socket from falling off when you turn the board over for soldering, hold the socket in position with one hand while soldering. Once a pin is soldered in position, it will hold the socket in position.
+
+
+Figure 9 Orientation of the DIP IC socket
+
+
+Table 3. IC socket ID numbers and type.
+Component ID
+Type
+Marking
+U3
+DIP14 socket
+14-pin 
+U1, 2, 4
+DIP16 socket
+16-pin
+
+After you have completed the board, your instructor will give you the integrated circuits for the sockets.   The integrated circuits are as shown in Table 4.
+
+Table 4. IC parts number and function.
+ID
+Parts number
+Function
+U1
+CD4051
+8 to 1 multiplexer 
+U2
+CD4052
+Due 4 to 1 multiplexer
+U3
+MC33204P
+Rail-to-Rail Op Amp
+U4
+CD4520
+Counter
+
+5.5 Light Emitting Diodes (LED)
+Light Emitting Diodes are a special kind of diode.  Like a typical diode, a LED has two pins -- an Anode and a Cathode (as shown in Figure 10).  Just like a diode, a LED only allows current to flow in one direction - from Anode to Cathode. If the proper voltage polarity (higher voltage applied to the Anode side) is applied to a LED, the ‘resistance’ of the LED is low, and the current can easily flow through the LED.  Typically, a few mA of current is enough to light up a LED.  If a reverse voltage is applied, the resistance of the LED will be very high (almost like an open circuit), so practically no current will flow through the LED, and the LED will not light up.  For this reason, it is important that the LED is placed on the board in the correct orientation.  
+
+On the LED marking on the board, there is a line pointing to one of the two holes.  The longer pin (the Anode) should be placed into this hole.  There are five LEDs on the board, LED1 ~ LED5.  Note that the LEDs used on this board look very similar to the infrared photo detector.  Make sure that you don’t mix these two types.  The LEDs are red. 
+
+
+
+Figure 10. Pin identification for LED. Note that a LED is polarized device. The longer lead is the Anode. The shorter one is the Cathode. Follow the markings on the IR circuit board to orient the LED properly before you solder it in place
+
+	•	Transistors:
+Transistors are commonly used for signal amplification, switching, voltage regulation, etc.  For the IRB, Q1 and Q2 are used as switches, while Q3 is for amplification.  Most transistors have 3 pins.  Make sure that you match the shape of the marking on the board and the shape of the transistor as shown in Figure 11. 
+
+
+Figure 11. Orientation of the board marking (on the left) and the transistor. 
+	
+                            Table 4 Transistor ID numbers, types, and markings on the transistors.
+Transistor ID
+Transistor type
+Marking
+Q1, Q2
+2N7000
+2N7000
+Q3
+2N3906
+2N3906
+
+	•	Connectors
+There are two connectors on the board – J1 and J2.  J1 is a 10-pin ribbon cable connector.  J2 is a 3-pin stick connector.  J1 should be placed according to Figure 12.  J2 can be placed in either orientation but the shorter pin side should be placed into the holes.  You will see a place on the circuit board labeled for J3.  For this project, J3 is not used.
+
+
+
+Figure 12. Placement of connector J1 and J2. 
+
+	•	Infrared Detectors
+There are eight infrared photo detectors on the board.  The appearance of these infrared photo detectors is similar to that of an LED.  In fact, the internal structure and the basic physics of a photo detector are similar to that of a regular diode.  The infrared photo detector has a focal direction, and the detection angle is about 15°.  This small detection angle allows the controller to tell the direction where the infrared light comes from.   
+Before you install the photo detectors, you should first determine the correct orientation of the detector.  This is done by aligning (but not installing) the longer pin of the infrared detector with the longer line marking on the board.   After you determine the orientation of the infrared detectors, bend the pins 90o, so that the tip of the infrared detector is pointing outward (toward the edge of the board) as shown in Figure 13.  Note that it is important to keep the pointing angles of the detectors evenly spread (about 15 degrees) and the elevation angle to zero (i.e., horizontal, not pointing up or down). 
+
+
+Figure 13.	Placement of the IR detectors. Bend the pins 90 degrees, so that the tip of the infrared detector is pointing outward and parallel to the plane of the circuit board. 
+
+	•	Fuse
+The components on the IRB are protected by the presence of a fuse. Solder the fuse holder to the IRB in the location marked “FUSE”. Gently push the fuse into the fuse holder.
+
+	•	Final Inspection
+After you have completed the board, ask your instructor to visually inspect the board before you move on to the next section.
+
+6. IRB Theory of Operation
+Figure 14 is a functional block diagram of the IRB.  There are three control signals from the VEX controller to the IRB(Frequency select, Exposure control, Reset to detector #0).  All three signals are ‘digital’ signals.  A digital signal is one that has only two states: 0v or 5v.  We consider the 5v state as the ‘high state’ (or as ‘1’), and the 0v state as the ‘low state’ (or as ‘0’).  These three signals are binary signals, that is their values are either ‘1’ or ‘0’.  
+There is only one signal from the IRB to the VEX controller (Intensity output).  This signal is an analog signal. An analog signal is one whose voltage varies continuously. For our robot, the analog voltage range will be between 0v and 5v.  The voltage level from the IR board is proportional to the intensity of the infrared signal sensed by a detector.  This analog signal is converted into a numerical value by a circuit knows as ‘analog-to-digital converter’ (ADC).  The ADC in the VEX controller converts a 5V (high infrared intensity) input to the value 1023 and 0v (low infrared intensity) to 0.  The functionality of each block in Figure 14 will be explained next.
+
+
+Figure  14  Functional block diagram of the infrared receiver board (IRB).
+
+6.1 Tuning Circuit
+The infrared beacon does not emit infrared light continuously.  It instead flashes at a certain frequency.  This flashing frequency allows the receiver circuit to ‘tune in’ to a particular beacon and to reject light from other ambient light sources (such as from a fluorescent light or a TV screen).  This ‘tuning’ concept is same thing as tuning your radio to a certain radio station.  In this lab, the red beacon emits flashes at 1kHz (1000 times a second) and the green one flashes at 10kHz (10000 times a second).  The tuning frequency (1kHz or 10kHz) can be set by an EasyC instruction as will be explained later.
+
+6.2 Exposure Control 
+Another key control signal is the ‘exposure’ control.  The receiver circuit works in a similar way as exposing photographic film by opening and closing a shutter.  To read the intensity of the signal sensed by a detector, your program should open the shutter for a certain exposure time period (3 to 8 mSec).  A longer exposure time results in a higher intensity reading.  
+
+6.3 Counter and Selector
+The exposure control also serves another important purpose.  After a shutter is open and then closed, the active detector is switched to the next one.  For example, if the active detector is currently detector #3, after your program opens and then closes the shutter (after reading the intensity from detector #3), the active detector is automatically advanced to detector #4.  In this way, to read the intensity readings from all 8 detectors, your program just needs to read 8 times consecutively.  This sequential selection is accomplished by a counter that counts the number of shutter closes.  The output of the counter is input to the selector for selecting one of the eight detectors.  Of course, for this sequential reading scheme to work, your program must have the ability to reset the counter to zero at any time (i.e., to initiate this 8 consecutive reading sequence).    
+
+6.4 Amplifier
+The sensing sensitivity of the infrared photo detector can be set to high or low. When a beacon is far away, a high sensitivity setting is required to sense its presence. When the beacon is within about 1 or 2 feet, the high sensitivity setting will result in more than one maximum reading (and hence make it impossible for the controller to tell which one is actually pointing at the beacon).  The selection between high and low sensitivity is also accomplished by the exposure control signal.  As mentioned above, to read the intensity readings from all 8 detectors, your program needs to read 8 times consecutively.  These 8 readings are done at the low sensitivity setting.  After the 8th read, the circuit is automatically set to the high sensitivity setting.  If so desired, your program may continue to read 8 more times – in the high sensitivity setting.  In the provided sample program ‘GOTO_BEACON’, only the low sensitivity setting is used.  For this project, the high sensitivity setting is not necessary.  Figure 15 shows the circuit that is responsible for each of the functional blocks.
+
+
+Figure  15  Infrared receiver board functional block locations.
+
+6.5 Indicator LEDs
+The 5 LEDs on the IRB are for status indication only.  They don’t serve any purpose for the operation of the board.    
+LED1 to LED3 show which IR detector is the active detector.  The following table shows the combinations of the state of LEDs (0=on, 1=off) and their corresponding active IR detector.  In normal operation, however, the VEX controller scans these detectors at a high rate which gives the appearance of random flashing.   
+	
+Table 5  Indicator light (LED 1 to 3) patterns.
+LED 3
+(4)
+LED 2
+(2)
+LED 1
+(1)
+Active IR detector No.
+0
+0
+0
+0
+0
+0
+1
+1
+0
+1
+0
+2
+0
+1
+1
+3
+1
+0
+0
+4
+1
+0
+1
+5
+1
+1
+0
+6
+1
+1
+1
+7
+LED4 indicated the low/high sensitivity setting.  When LED 4 is on, the circuit is at the low sensitivity setting.  When it is off, the circuit is at the high sensitivity setting
+LED 5 indicates the tuning frequency.  When LED 5 is on, 1 kHz is selected, i.e., the circuit is tuned to the red beacon.  When it is off, 10 kHz is selected (the green beacon).  
+
+6.6 Cable Connection between VEX controller and IRB
+The connection between the IR receiver board is made via a ribbon cable and a 3-conductor cable.    Figure 16 shows the connection. 
+
+
+
+Figure 16. Cable connection between IRB and the VEX controller
+
+
+With the cable connection shown in Figure 13, the interface signals and their corresponding VEX controller ports, and the instructions for reading/writing from/to the port are shown in Table 6. 
+
+Table 6 Port number and instructions for accessing the ports
+Signals
+Port No.
+Type
+Instruction for reading from 
+or writing to the ports
+Photo detector intensity
+
+AD1
+Analog input to VEX
+x = GetAnalogInput(1)
+Frequency selection
+AD10
+Digital output to IRB
+SetDigitalOutput(14,0) for selecting 1kHz, red beacon  
+SetDigitalOutput(14,1) for selecting 10kHz, green beacon 
+Exposure 
+control
+AD11
+Digital output to IRB 
+SetDigitalOutput(15,0) for opening the shutter
+
+SetDigitalOutput(15,1) for closing the shutter and increasing the active IR detector number by 1 
+Reset to IR detector 0
+AD12
+Digital output to IRB 
+SetDigitalOutput(16,0) for resetting to #0 IR detector
+SetDigitalOutput(16,1) for allowing auto advance
+
+.  
+
+7.  System Development Considerations
+
+7.1 Ultrasonic (Sonar) sensor
+It is important that the robot stop as close to the beacon as possible in order to deploy the mechanism to turn off the red beacon or to secure the green beacon.  The reading from the photo detectors can be used as a rough indication of the distance (as used in the sample program GOTO_BEACON).  Ultrasonic sensors provide much more accurate distance readings.  For the last part of the task (moving the green beacon across the starting line), using the ultrasonic sensor is a good way to find the open side of the arena. 
+
+7.2 Bumper Switch and Limit Switch.
+The bumper switch and limit switch can be used to sense a ‘running against the wall’ condition.  Such a condition is obvious to an observer but, without a proper sensor, a robot has no way of knowing and avoiding such a condition.  
+
+7.3 Optical Encoder
+An optical encoder measures the actual rotation of the wheel.  It is used for precision control of the robot speed and travel distance.  The instruction “startMotor” only sets a rough speed of the robot. An optical encoder may not be necessary for the project.    
+
+7.4 Issues with the frequency select function.
+When the IRB circuit is tuned to 1kHz (for the red beacon), it can still sense the 10kHz signal (from the green beacon).  This situation is very much like using an AM radio in your car.  When you drive near a transmission antenna of a radio station, due to the overwhelmingly high radio signal at that location, your receiver will likely pick up some signal from this antenna regardless of which AM station your radio is tuned to.  If the IRB circuit is tuned to the red beacon, but the green beacon is very close to the IRB (within 1 or 2 feet), the IRB circuit will give an intensity reading.  In other words, if you set the tuning frequency to 1kHz (red beacon), and your program senses a reading from the board, this reading may not be from the red beacon.  One way to remedy this situation is to read the intensity at both frequency settings (reading twice).  If the intensity reading is higher when the turning frequency is set at the unintended frequency, the reading should be ignored.   
+
+7.5 VEX controller Analog/Digital ports
+
+There are 8 Analog and 12 Digital ports on the VEX Cortex controller. The ribbon cable connecting the VEX controller and the IRB take up Digital Ports 9-12 (see lecture slides). 
